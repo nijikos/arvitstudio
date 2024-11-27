@@ -1,6 +1,6 @@
 const base = {
-  arvit: {
-    white: "#E7F2F7",
+  "#1C5471": {
+    white: "#F5FCFF",
     lightest: "#B8D8E7",
     lighter: "#4D87A4",
     light: "#376E8D",
@@ -8,6 +8,16 @@ const base = {
     dark: "#113849",
     darker: "#113849",
     darkest: "#091C26",
+  },
+  "#EDBD72": {
+    white: "#FFF9EF",
+    lightest: "#FFECCD",
+    lighter: "#FFE0AF",
+    light: "#FCD28F",
+    DEFAULT: "#EDBD72",
+    dark: "#D5A85B",
+    darker: "#916A22",
+    darkest: "#3F2200",
   },
   "#0084FF": {
     white: "#FAFDFF",
@@ -94,8 +104,8 @@ const base = {
 };
 
 const colors = {
-  primary: base["arvit"],
-  accent: base["#8A64CF"],
+  primary: base["#1C5471"],
+  accent: base["#EDBD72"],
   secondary: base["#0084FF"],
   warning: base["#FFC736"],
   error: base["#EE4648"],

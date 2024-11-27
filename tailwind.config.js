@@ -7,13 +7,28 @@ const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "3xl": { max: "1600px" },
+      "2xl": { max: "1400px" },
+      xl: { max: "1280px" },
+      lg: { max: "1000px" },
+      md: { max: "700px" },
+      sm: { max: "480px" },
+    },
     extend: {
       colors: colors,
       fontFamily: {
         poppins: "var(--font-poppins)",
+      },
+      scale: {
+        98: "98%",
+        99: "99%",
+        102: "102%",
       },
     },
   },
@@ -22,39 +37,7 @@ const config = {
     require("tailwind-scrollbar"),
     iOSHeight,
     plugin(function ({ addBase, addComponents, addUtilities }) {
-      addBase({
-        html: {
-          "@apply font-poppins text-[1rem]": {},
-        },
-        body: {
-          "@apply font-poppins bg-n-9 text-[1rem] tracking-normal leading-normal text-n-9 antialiased md:bg-n-0 dark:text-n-0 dark:md:bg-n-7":
-            {},
-        },
-        input: {
-          "@apply focus:outline-none": {},
-        },
-        p: {
-          "@apply tracking-normal leading-8": {},
-        },
-        h1: {
-          "@apply tracking-normal": {},
-        },
-        h2: {
-          "@apply tracking-normal": {},
-        },
-        h3: {
-          "@apply font-poppins tracking-normal": {},
-        },
-        h4: {
-          "@apply tracking-normal": {},
-        },
-        h5: {
-          "@apply tracking-normal": {},
-        },
-        span: {
-          "@apply tracking-normal": {},
-        },
-      });
+      addBase({});
       addComponents({
         // ------- BOUNDING BOX
         ".bound": {
@@ -78,83 +61,26 @@ const config = {
         ".bound-yellow": {
           "@apply border-3 border-dashed border-yellow-200": {},
         },
-        // ------- TYPOGRAPHY
-        ".h1": {
-          "@apply font-poppins text-6xl font-bold": {},
-        },
-        ".h2": {
-          "@apply font-poppins text-5xl font-bold": {},
-        },
-        ".h3": {
-          "@apply font-poppins text-4xl font-bold": {},
-        },
-        ".h4": {
-          "@apply font-poppins text-3xl font-bold": {},
-        },
-        ".h5": {
-          "@apply font-poppins text-2xl font-semibold": {},
-        },
-        ".h6": {
-          "@apply font-poppins text-xl font-semibold": {},
-        },
-        ".body1": {
-          "@apply text-2xl leading-normal": {},
-        },
-        ".body1S": {
-          "@apply text-xl leading-normal": {},
-        },
-        ".body2": {
-          "@apply text-lg leading-normal": {},
-        },
-        ".base1": {
-          "@apply font-poppins text-base leading-normal font-medium": {},
-        },
-        ".base2": {
-          "@apply font-poppins text-sm leading-normal font-medium": {},
-        },
-        ".caption1": {
-          "@apply font-poppins text-xs leading-normal font-medium": {},
-        },
-        ".caption2": {
-          "@apply font-poppins text-2xs leading-normal font-medium": {},
-        },
-        ".caption3": {
-          "@apply font-poppins text-3xs leading-normal font-normal": {},
-        },
-        ".expired-input": {
-          "@apply border border-solid border-n-3 px-4 py-4 rounded-lg flex flex-row justify-center gap-4 items-center transition bg-n-1 text-n-4 cursor-not-allowed w-full":
-            {},
-        },
-        // ------- CARDS/PAPERS
-        ".card": {
-          "@apply bg-n-0 px-6 py-4 rounded-lg": {},
-        },
-        ".card-xl": {
-          "@apply bg-n-0 px-6 py-6 rounded-xl": {},
-        },
-        ".card-p-0": {
-          "@apply bg-n-0 rounded-lg": {},
-        },
         // ------- BUTTONS
         ".button-base": {
-          "@apply flex flex-row items-center justify-center transition-all active:scale-98 disabled:bg-n-2 disabled:text-n-4 disabled:hover:text-n-4 disabled:border-n-2 disabled:hover:bg-n-2 disabled:hover:border-n-2 disabled:cursor-not-allowed disabled:active:scale-100":
+          "@apply flex flex-row items-center justify-center transition-all active:scale-99 disabled:bg-n-2 disabled:text-n-4 disabled:hover:text-n-4 disabled:border-n-2 disabled:hover:bg-n-2 disabled:hover:border-n-2 disabled:cursor-not-allowed disabled:active:scale-100 font-light":
             {},
         },
         // #### BUTTON SIZES (AUTO)
         ".button-2xl": {
-          "@apply gap-4 rounded-lg px-16 py-4 text-lg": {},
+          "@apply gap-4 rounded-full px-16 py-4 text-lg": {},
         },
         ".button-xl": {
-          "@apply gap-3 rounded-lg px-12 py-3.5": {},
+          "@apply gap-3 rounded-full px-12 py-3.5": {},
         },
         ".button-lg": {
-          "@apply gap-2 rounded-lg px-10 py-2": {},
+          "@apply gap-2 rounded-full px-10 py-2": {},
         },
         ".button-md": {
-          "@apply gap-2 rounded-lg px-6 py-2": {},
+          "@apply gap-2 rounded-full px-6 py-2": {},
         },
         ".button-sm": {
-          "@apply gap-2 rounded-lg px-4 py-2 text-sm": {},
+          "@apply gap-2 rounded-full px-4 py-2 text-sm": {},
         },
         ".button-xs": {
           "@apply gap-2 rounded px-2 py-1 text-xs": {},
@@ -167,31 +93,31 @@ const config = {
         },
         // #### BUTTON SIZES (FIXED)
         ".button-fixed-2xl": {
-          "@apply button-base gap-4 justify-center rounded-lg px-12 py-3 w-104":
+          "@apply button-base gap-4 justify-center rounded-full px-12 py-3 w-104":
             {},
         },
         ".button-fixed-xl": {
-          "@apply button-base gap-4 justify-center rounded-lg px-12 py-3 w-96":
+          "@apply button-base gap-4 justify-center rounded-full px-12 py-3 w-96":
             {},
         },
         ".button-fixed-lg": {
-          "@apply button-base gap-4 justify-center rounded-lg px-8 py-3 w-60":
+          "@apply button-base gap-4 justify-center rounded-full px-8 py-3 w-60":
             {},
         },
         ".button-fixed-md": {
-          "@apply button-base gap-2 justify-center rounded-lg px-6 py-3 w-44":
+          "@apply button-base gap-2 justify-center rounded-full px-6 py-3 w-44":
             {},
         },
         ".button-fixed-sm": {
-          "@apply button-base gap-2 justify-center rounded-lg px-5 py-3 w-40":
+          "@apply button-base gap-2 justify-center rounded-full px-5 py-3 w-40":
             {},
         },
         ".button-fixed-xs": {
-          "@apply button-base gap-1 justify-center rounded-lg px-4 py-3 w-28":
+          "@apply button-base gap-1 justify-center rounded-full px-4 py-3 w-28":
             {},
         },
         ".button-fixed-2xs": {
-          "@apply button-base gap-1 justify-center rounded-lg px-2 py-3 w-24":
+          "@apply button-base gap-1 justify-center rounded-full px-2 py-3 w-24":
             {},
         },
         // #### BUTTON STYLES
@@ -201,6 +127,10 @@ const config = {
         },
         ".button-contain-primary": {
           "@apply button-base border border-solid border-primary hover:border-primary-dark bg-primary hover:bg-primary-dark text-n-0":
+            {},
+        },
+        ".button-contain-accent": {
+          "@apply button-base border border-solid border-accent-dark hover:border-accent bg-accent-dark hover:bg-accent text-n-0":
             {},
         },
         ".button-contain-secondary": {
@@ -215,6 +145,10 @@ const config = {
           "@apply button-base border border-solid border-n-9 hover:border-n-7 bg-n-9 hover:bg-n-7 text-n-0 fill-n-0":
             {},
         },
+        ".button-contain-white": {
+          "@apply button-base border border-solid border-white hover:border-accent bg-white text-black fill-black hover:text-accent hover:fill-accent":
+            {},
+        },
         ".button-contain-error": {
           "@apply button-base border border-solid border-error hover:border-error-dark bg-error hover:bg-error-dark text-n-0":
             {},
@@ -227,12 +161,20 @@ const config = {
           "@apply button-base border border-solid border-primary text-primary hover:bg-primary-lightest hover:text-primary-dark":
             {},
         },
+        ".button-outline-accent": {
+          "@apply button-base border border-solid border-accent text-accent hover:bg-accent-dark hover:text-white":
+            {},
+        },
         ".button-outline-secondary": {
           "@apply button-base border border-solid border-secondary text-secondary hover:bg-secondary-lightest hover:text-secondary-dark":
             {},
         },
         ".button-outline-black": {
           "@apply button-base border border-solid border-n-9 text-n-9 hover:bg-n-9 hover:text-n-0 hover:fill-n-0":
+            {},
+        },
+        ".button-outline-white": {
+          "@apply button-base border border-solid border-white text-white hover:bg-white hover:text-black hover:fill-black":
             {},
         },
         ".button-outline-gray": {
@@ -251,6 +193,10 @@ const config = {
           "@apply button-base text-primary hover:bg-primary-lightest hover:text-primary-dark":
             {},
         },
+        ".button-text-accent": {
+          "@apply button-base text-accent hover:bg-accent-lightest hover:text-accent-dark":
+            {},
+        },
         ".button-text-secondary": {
           "@apply button-base text-secondary hover:bg-secondary-lightest hover:text-secondary-dark":
             {},
@@ -261,6 +207,9 @@ const config = {
         ".button-text-black": {
           "@apply button-base text-n-9 hover:bg-n-1": {},
         },
+        ".button-text-white": {
+          "@apply button-base text-white hover:bg-white/10": {},
+        },
         ".button-text-error": {
           "@apply button-base text-error hover:bg-error-lightest hover:text-error-dark":
             {},
@@ -270,23 +219,31 @@ const config = {
             {},
         },
         ".button-link-primary": {
-          "@apply !p-0 text-primary hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed":
+          "@apply !p-0 text-primary hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
+            {},
+        },
+        ".button-link-accent": {
+          "@apply !p-0 text-accent hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
             {},
         },
         ".button-link-secondary": {
-          "@apply !p-0 text-secondary hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed":
+          "@apply !p-0 text-secondary hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
             {},
         },
         ".button-link-gray": {
-          "@apply !p-0 text-n-9 hover:text-n-4 hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed":
+          "@apply !p-0 text-n-9 hover:text-n-4 hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
             {},
         },
         ".button-link-black": {
-          "@apply !p-0 text-n-9 hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed":
+          "@apply !p-0 text-n-9 hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
+            {},
+        },
+        ".button-link-white": {
+          "@apply !p-0 text-white hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
             {},
         },
         ".button-link-error": {
-          "@apply !p-0 text-error hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed":
+          "@apply !p-0 text-error hover:underline disabled:text-n-4 disabled:hover:no-underline disabled:cursor-not-allowed underline-offset-8":
             {},
         },
       });
