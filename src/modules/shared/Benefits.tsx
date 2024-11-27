@@ -54,7 +54,9 @@ export default function Benefits({ test }: BenefitsProps) {
             {benefits.map((b, ii) => {
               return (
                 <div key={ii} className='max-w-[580px] w-fit'>
-                  <p className='font-semibold text-2xl mb-4'>{b.title}</p>
+                  <p className='font-semibold text-2xl mb-4 text-primary-dark'>
+                    {b.title}
+                  </p>
                   <p className=''>{b.text}</p>
                 </div>
               );
