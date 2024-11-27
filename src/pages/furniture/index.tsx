@@ -1,4 +1,6 @@
 import React from "react";
+import Hero from "@/modules/furniture/sections/Hero";
+import Benefits from "@/modules/shared/Benefits";
 
 type FurnitureProps = {
   test?: string;
@@ -6,13 +8,9 @@ type FurnitureProps = {
 
 export default function Furniture({ test }: FurnitureProps) {
   return (
-    <div
-      className=''
-      style={{
-        backgroundColor: "var(--primary)",
-      }}
-    >
-      Furniture
+    <div className='scroll-smooth'>
+      <Hero />
+      <Benefits />
     </div>
   );
 }
