@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property='og:description'
           content='Jasa desain interior, pembuatan furnitur, dan kontraktor murah di Jakarta, Bandung, Depok, Tangerang, dan Bekasi. Hubungi kami untuk wujudkan ruang impian Anda!'
         />
-        <meta property='og:url' content='https://www.arvitstudio.com/' />
+        <meta property='og:url' content='https://www.arvitstudio.com' />
         <meta property='og:type' content='website' />
         <meta
           property='og:image'
@@ -59,7 +59,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name='twitter:image'
           content='https://www.arvitstudio.com/images/home/ogimage.png'
         />
-        <link rel='canonical' href='https://www.arvitstudio.com/' />
+        <link rel='canonical' href='https://www.arvitstudio.com' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Component {...pageProps} />
