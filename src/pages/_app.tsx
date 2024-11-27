@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
@@ -16,6 +17,9 @@ export default function App({ Component, pageProps }: AppProps) {
       id='arvit'
       className={`${poppins.variable} font-[family-name:var(--font-poppins)]`}
     >
+      <Head>
+        <title>Arvit Studio</title>
+      </Head>
       <Component {...pageProps} />
     </main>
   );
