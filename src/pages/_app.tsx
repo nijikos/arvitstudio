@@ -59,7 +59,8 @@ export default function App({ Component, pageProps }: AppProps) {
           name='twitter:image'
           content='https://www.arvitstudio.com/images/home/ogimage.png'
         />
-        <link rel='canonical' href='https://yourwebsite.com' />
+        <link rel='canonical' href='https://www.arvitstudio.com/' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Component {...pageProps} />
     </main>
