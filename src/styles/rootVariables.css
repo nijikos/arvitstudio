@@ -1,0 +1,88 @@
+:root {
+  font-size: 16px;
+
+  --secondary-white: #fafdff;
+  --secondary-lightest: #e5f3ff;
+  --secondary-lighter: #66b5ff;
+  --secondary-light: #339dff;
+  --secondary: #0084ff;
+  --secondary-dark: #006acc;
+  --secondary-darker: #004f99;
+  --secondary-darkest: #00284d;
+
+  --error-white: #fef6f6;
+  --error-lightest: #fdeced;
+  --error-lighter: #f59091;
+  --error-light: #f16b6d;
+  --error: #ee4648;
+  --error-dark: #cc3c3e;
+  --error-darker: #a63132;
+  --error-darkest: #732223;
+
+  --warning-white: #fffef8;
+  --warning-lightest: #fff7e1;
+  --warning-lighter: #ffdd86;
+  --warning-light: #ffd25e;
+  --warning: #ffc736;
+  --warning-dark: #d69722;
+  --warning-darker: #ad771a;
+  --warning-darkest: #7a500f;
+
+  --success-white: #fafef9;
+  --success-lightest: #e7fbe0;
+  --success-lighter: #a1f182;
+  --success-light: #81ec59;
+  --success: #62e82f;
+  --success-dark: #4eba26;
+  --success-darker: #3b8b1c;
+  --success-darkest: #275d13;
+
+  --n-0: #ffffff;
+  --n-1: #f8f8f9;
+  --n-2: #f0f1f2;
+  --n-3: #c4c7cc;
+  --n-4: #898e99;
+  --n-5: #6b727f;
+  --n-6: #40454d;
+  --n-7: #2b2e33;
+  --n-8: #15171a;
+  --n-9: #020203;
+}
+
+#arvit {
+  --primary-white: #e7f2f7;
+  --primary-lightest: #b8d8e7;
+  --primary-lighter: #4d87a4;
+  --primary-light: #376e8d;
+  --primary: #1c5471;
+  --primary-dark: #113849;
+  --primary-darker: #113849;
+  --primary-darkest: #091c26;
+  --accent-white: #fefdff;
+  --accent-lightest: #f9f7fd;
+  --accent-lighter: #e2d8f3;
+  --accent-light: #a78bdb;
+  --accent: #8a64cf;
+  --accent-dark: #684b9b;
+  --accent-darker: #4c3772;
+  --accent-darkest: #302348;
+}
+
+#bareskrim {
+  --primary-white: #fcfbfa;
+  --primary-lightest: #f2ebe8;
+  --primary-lighter: #b28a75;
+  --primary-light: #996347;
+  --primary: #803b1a;
+  --primary-dark: #592609;
+  --primary-darker: #401b06;
+  --primary-darkest: #331605;
+  --accent-white: #f7f9f5;
+  --accent-lightest: #eff3eb;
+  --accent-lighter: #9dba85;
+  --accent-light: #7ca35d;
+  --accent: #5b8c34;
+  --accent-dark: #4b732b;
+  --accent-darker: #3a5921;
+  --accent-darkest: #294018;
+}
