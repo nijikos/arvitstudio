@@ -116,6 +116,22 @@ export default function Price({ test }: PriceProps) {
           return <PriceItem key={ii} price={price} />;
         })}
       </div>
+
+      <div className='w-full px-32 md:px-6 py-12 flex flex-col gap-8 items-center text-center'>
+        <p className='max-w-[800px] text-xl md:text-lg'>
+          Masih Bingung? Ingin Rincian Harga yang Lebih Custom?
+        </p>
+        <Link
+          target='_blank'
+          href={whatsappLink.link}
+          className='button-xl lg:button-md lg:text-sm button-outline-primary'
+        >
+          Konsultasikan biaya pembangunan
+        </Link>
+        <p className='max-w-[800px] text-xl md:text-lg'>
+          yang sesuai dengan kebutuhanmu bersama kami.
+        </p>
+      </div>
     </div>
   );
 }
