@@ -30,7 +30,7 @@ export default function Footer({ test }: FooterProps) {
   ];
   return (
     <footer className='w-full bg-primary px-32 lg:px-6 py-32 lg:py-20 grid grid-cols-3'>
-      <div className='col-span-1'>
+      <div className='col-span-1 lg:col-span-3'>
         <Link href='/furniture'>
           <Image
             className='min-w-32 w-32 hover:scale-[101%] transition-all'
@@ -40,7 +40,7 @@ export default function Footer({ test }: FooterProps) {
             alt='arvit logo'
           />
         </Link>
-        <div className='flex flex-row items-center gap-4 py-8'>
+        <div className='flex flex-row items-center gap-4 py-8 flex-wrap'>
           {socials.map((social, ii) => {
             return (
               <Link
@@ -61,7 +61,7 @@ export default function Footer({ test }: FooterProps) {
           })}
         </div>
       </div>
-      <div className='col-span-2 pl-8 border-l border-accent text-white font-extralight'>
+      <div className='col-span-2 lg:col-span-3 pl-8 lg:pl-0 lg:pt-8 border-l lg:border-t lg:border-l-0 border-accent text-white font-extralight'>
         <p className='text-4xl font-semibold'>
           Wujudkan Rumahmu, Mulai dari Sini
         </p>
