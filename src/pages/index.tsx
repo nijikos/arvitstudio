@@ -8,11 +8,11 @@ export default function Home() {
         width={1200}
         height={675}
         className='h-screen w-screen object-cover blur-2xl'
-        src='/images/home/home-bg.png'
+        src='/images/home/home-bg-4.jpg'
         alt='home bg'
       />
       <div className='fixed w-screen h-screen top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center px-6'>
-        <p className='mb-20'>Nijiko Dev</p>
+        <p className='mb-20'>Arvit Studio</p>
         <p className='text-5xl mb-4'>UNDER</p>
         <p className='text-5xl'>CONSTRUCTION</p>
         <p className='mt-8 text-center'>{subtext}</p>
