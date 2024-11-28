@@ -27,9 +27,9 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
 
           <div className='flex flex-col items-end text-primary'>
             <QuoteUp variant='Bold' size={36} />
-            <p className='text-4xl leading-relaxed text-right'>
-              Jasa interior yang proaktif yang menawarkan berbagai hal di luar
-              ekspektasi saya.
+            <p className='text-4xl md:text-xl leading-relaxed text-right'>
+              Jasa interior yang <b>proaktif</b> yang menawarkan berbagai hal di{" "}
+              <b>luar ekspektasi saya</b>.
             </p>
             <QuoteDown variant='Bold' size={36} />
           </div>
