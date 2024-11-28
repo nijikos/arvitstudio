@@ -9,6 +9,7 @@ import Workflow from "@/modules/shared/Workflow";
 import Team from "@/modules/shared/Team";
 import Footer from "@/modules/shared/Footer";
 import Price from "@/modules/furniture/sections/Price";
+import CTA from "@/modules/shared/CTA";
 
 type FurnitureProps = {
   test?: string;
@@ -26,6 +27,7 @@ export default function Furniture({ test }: FurnitureProps) {
       <Workflow />
       <Team />
       <Price />
+      <CTA />
       <Footer />
     </div>
   );
