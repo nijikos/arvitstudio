@@ -71,15 +71,15 @@ export default function Footer({ test }: FooterProps) {
         </p>
         <div className='flex flex-col gap-6 mt-12'>
           <div className='flex flex-row items-center gap-4'>
-            <Sms />
+            <Sms className='shrink-0' />
             <p>arvitstudio@gmail.com</p>
           </div>
           <div className='flex flex-row items-center gap-4'>
-            <Sms />
+            <Sms className='shrink-0' />
             <p>arvitstudioadmiinn@gmail.com</p>
           </div>
           <div className='flex flex-row items-start gap-4'>
-            <Location className='relative top-2' />
+            <Location className='relative top-2 shrink-0' />
             <div>
               <p className='text-2xl font-normal'>Arvit Studio Office</p>
               <p>
@@ -96,7 +96,7 @@ export default function Footer({ test }: FooterProps) {
             </div>
           </div>
           <div className='flex flex-row items-start gap-4'>
-            <Location className='relative top-2' />
+            <Location className='relative top-2 shrink-0' />
             <div>
               <p className='text-2xl font-normal'>Workshop Furnitur</p>
               <p>Malaka Jaya No.61 Rt 1, Rorotan, Cilincing, Jakut 14140</p>
