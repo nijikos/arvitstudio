@@ -1,4 +1,5 @@
 import ImageSlideShow from "@/ui/ImageSlideShow";
+import { Location } from "iconsax-react";
 import Image from "next/image";
 import React from "react";
 
@@ -11,6 +12,10 @@ export default function Portfolio({ test }: PortfolioProps) {
     {
       title: "Dapur Bu Dyan",
       description: "100x100m2 Lorem ipsum dolor sit amet.",
+      klien: "Bu Dyan",
+      lokasi: "Pasar Rebo",
+      ukuran: "6 x 4 meter",
+      style: "Minimalis Tropis",
       images: [
         "/images/furniture/portfolio/dapur/bu_dyan/1.jpg",
         "/images/furniture/portfolio/dapur/bu_dyan/2.jpg",
@@ -23,6 +28,11 @@ export default function Portfolio({ test }: PortfolioProps) {
     {
       title: "Dapur Bu Dina",
       description: "100x100m2 Lorem ipsum dolor sit amet.",
+      klien: "Bu Dina",
+      lokasi: "Ancol",
+      ukuran: "4 meter",
+      square: true,
+      style: "Minimalis Japandi",
       images: [
         "/images/furniture/portfolio/dapur/dina/1.jpg",
         "/images/furniture/portfolio/dapur/dina/2.jpg",
@@ -33,6 +43,10 @@ export default function Portfolio({ test }: PortfolioProps) {
     {
       title: "Kamar Tidur Utama",
       description: "100x100m2 Lorem ipsum dolor sit amet.",
+      klien: "Bu Dyan",
+      lokasi: "Pasar Rebo",
+      ukuran: "5x5 meter",
+      style: "Minimalis Japandi",
       images: [
         "/images/furniture/portfolio/kamar/master/1.jpg",
         "/images/furniture/portfolio/kamar/master/2.jpg",
@@ -43,6 +57,10 @@ export default function Portfolio({ test }: PortfolioProps) {
     {
       title: "Kamar Tidur Anak",
       description: "100x100m2 Lorem ipsum dolor sit amet.",
+      klien: "Bu Dyan",
+      lokasi: "Pasar Rebo",
+      ukuran: "4x4 meter",
+      style: "Minimalis",
       images: [
         "/images/furniture/portfolio/kamar/anak/1.jpg",
         "/images/furniture/portfolio/kamar/anak/2.jpg",
@@ -54,6 +72,10 @@ export default function Portfolio({ test }: PortfolioProps) {
     {
       title: "Kabinet TV",
       description: "100x100m2 Lorem ipsum dolor sit amet.",
+      klien: "Bu Rusli",
+      lokasi: "Bekasi",
+      ukuran: "300 x 300 x 40 cm",
+      style: "Minimalis Tropis",
       images: [
         "/images/furniture/portfolio/tv/1.jpg",
         "/images/furniture/portfolio/tv/2.jpg",
@@ -78,7 +100,8 @@ export default function Portfolio({ test }: PortfolioProps) {
       <div className='w-full overflow-x-auto flex flex-row gap-20 flex-nowrap pl-40 lg:pl-6 pb-8 thin-scrollbar'>
         {portfolios.map((portfolio, ii) => {
           return (
-            <div key={ii} className='w-[840px] lg:w-screen shrink-0'>
+            <div key={ii} className='w-[840px] lg:w-screen shrink-0 bg-gray-50'>
+              {/* ------------ IMAGE THUMBNAIL */}
               <div className='relative'>
                 <ImageSlideShow images={portfolio.images} />
                 <Image
@@ -89,9 +112,26 @@ export default function Portfolio({ test }: PortfolioProps) {
                   alt='Arvit Watermark'
                 />
               </div>
-              <div>
-                <p className='text-lg font-semibold'>{portfolio.title}</p>
-                <p className='text-sm text-gray-500'>{portfolio.description}</p>
+              {/* ------------ DESCRIPTION */}
+              <div className='py-8 px-6 flex flex-col gap-2'>
+                <p className='text-lg font-semibold text-primary'>
+                  {portfolio.title}
+                </p>
+                <p className='text-sm flex flex-row items-center gap-2'>
+                  <Location size={12} /> {portfolio.lokasi}
+                </p>
+                <p className='text-sm text-gray-500'>
+                  Ukuran : {portfolio.ukuran}{" "}
+                  {portfolio?.square && (
+                    <span className='text-xs relative bottom-1'>2</span>
+                  )}
+                </p>
+                <p className='text-sm text-gray-500'>
+                  Klien : {portfolio.klien}
+                </p>
+                <p className='text-sm px-3 py-1 rounded-full bg-accent w-fit'>
+                  {portfolio.style}
+                </p>
               </div>
             </div>
           );
