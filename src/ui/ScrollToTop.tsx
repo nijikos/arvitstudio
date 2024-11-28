@@ -1,4 +1,5 @@
 import { ArrowUp } from "iconsax-react";
+import { useRouter } from "next/router";
 
 import React, { useEffect, useState } from "react";
 
@@ -7,6 +8,7 @@ type ScrollToTopProps = {
 };
 
 export default function ScrollToTop({ test }: ScrollToTopProps) {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,6 +31,13 @@ export default function ScrollToTop({ test }: ScrollToTopProps) {
       top: 0,
       behavior: "smooth", // Smooth scrolling animation
     });
+
+    const pathWithoutHash = router.asPath.split("#")[0];
+
+    // If the URL contains a hash and it's not the current path, update the URL
+    if (router.asPath !== pathWithoutHash) {
+      router.push(pathWithoutHash, undefined, { shallow: true });
+    }
   };
 
   return (
