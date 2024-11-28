@@ -35,7 +35,7 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
           </div>
 
           <Link
-            href={"/"}
+            href={"#furniture-hero"}
             className='button-lg w-72 lg:button-md lg:text-sm button-outline-primary'
           >
             Lihat Testimoni Lainnya
