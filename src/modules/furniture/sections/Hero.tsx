@@ -24,11 +24,11 @@ export default function Hero({ test }: HeroProps) {
         src={`/images/furniture/hero-furniture-3.png`}
         width={1024}
         height={1024}
-        className='w-[60vw] h-[640px] lg:h-[600px] md:w-full absolute right-0 bottom-0 object-cover rounded-tl-[120px] md:rounded-none'
+        className='w-[60vw] h-[76vh] lg:h-[600px] md:w-full absolute right-0 bottom-0 object-cover rounded-tl-[80px] md:rounded-none'
       />
       {/* --------- HERO TEXT */}
       <div className='z-10 absolute left-0 bottom-0 flex flex-col gap-4 text-white pl-40 3xl:pl-20 lg:px-6 pb-12'>
-        <p className='w-[640px] lg:w-fit font-semibold text-7xl lg:text-4xl drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]'>
+        <p className='w-[820px] lg:w-fit font-semibold text-8xl lg:text-5xl drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]'>
           Furniture Design & Build
         </p>
         <div>
