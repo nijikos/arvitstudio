@@ -5,6 +5,7 @@ import Promo from "@/modules/shared/Promo";
 import Testimonial from "@/modules/shared/Testimonial";
 import Portfolio from "@/modules/furniture/sections/Portfolio";
 import WhyArvit from "@/modules/shared/WhyArvit";
+import Workflow from "@/modules/shared/Workflow";
 
 type FurnitureProps = {
   test?: string;
@@ -19,6 +20,7 @@ export default function Furniture({ test }: FurnitureProps) {
       <Testimonial videoSrc='/videos/testimoni/1.mp4' />
       <Portfolio />
       <WhyArvit />
+      <Workflow />
     </div>
   );
 }
