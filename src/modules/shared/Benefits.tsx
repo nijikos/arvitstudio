@@ -56,8 +56,8 @@ export default function Benefits({ test }: BenefitsProps) {
               height={800}
             />
             <Image
-              className='absolute bottom-12 right-8 w-16 disable-user-actions'
-              src={`/images/logo/arvit-logo-portrait.svg`}
+              className='absolute bottom-8 right-8 w-16 disable-user-actions'
+              src={`/images/logo/arvit-text-logo-landscape.svg`}
               width={100}
               height={100}
               alt='Arvit Watermark'

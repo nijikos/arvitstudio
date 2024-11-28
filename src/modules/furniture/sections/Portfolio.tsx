@@ -83,7 +83,7 @@ export default function Portfolio({ test }: PortfolioProps) {
                 <ImageSlideShow images={portfolio.images} />
                 <Image
                   className='absolute bottom-12 right-8 w-16'
-                  src={`/images/logo/arvit-logo-portrait.svg`}
+                  src={`/images/logo/arvit-text-logo-landscape.svg`}
                   width={100}
                   height={100}
                   alt='Arvit Watermark'
