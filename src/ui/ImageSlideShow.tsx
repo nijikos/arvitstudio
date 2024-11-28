@@ -10,6 +10,8 @@ type ImageSlideShowProps = {
 const ImageSlideShow = ({ images }: ImageSlideShowProps) => {
   return (
     <Slide
+      canSwipe={true}
+      autoplay={false}
       arrows={false}
       indicators={true}
       duration={5000}
