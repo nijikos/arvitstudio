@@ -61,9 +61,12 @@ export default function Footer({ test }: FooterProps) {
           })}
         </div>
       </div>
-      <div className='col-span-2 lg:col-span-3 pl-8 lg:pl-0 lg:pt-8 border-l lg:border-t lg:border-l-0 border-accent text-white font-extralight'>
-        <p className='text-4xl font-semibold'>
-          Wujudkan Rumahmu, Mulai dari Sini
+      <div className='col-span-2 lg:col-span-3 pl-8 lg:pl-0 lg:pt-8 border-l lg:border-t lg:border-l-0 border-accent text-white'>
+        <p className='text-4xl font-semibold mb-4 text-accent'>
+          Promo terbatas hanya hari ini
+        </p>
+        <p className='text-2xl font-semibold mb-4'>
+          Wujudkan interior hunianmu dengan hemat budget, waktu, dan tenaga
         </p>
         <p className='max-w-[620px]'>
           Dapatkan konsultasi gratis, desain sesuai kebutuhan, dan proses mudah
