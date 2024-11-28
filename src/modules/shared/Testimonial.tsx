@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import TestimonialVideo from "./components/TestimonialVideo";
 import Link from "next/link";
 import { QuoteDown, QuoteUp, VideoSquare } from "iconsax-react";
@@ -11,12 +11,12 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
   return (
     <div
       id='testimonials'
-      className='flex items-center justify-center py-24 lg:pb-0'
+      className='flex items-center justify-center py-24 px-32 lg:px-6 bg-gray-50'
     >
-      <div className='flex flex-row lg:flex-col flex-wrap lg:items-center justify-center gap-8'>
-        {/* ----------- TEXT RIGHT */}
-        <div className='w-[400px] lg:w-full flex flex-col gap-8 lg:px-4 lg:items-center'>
-          <h2 className='text-4xl font-semibold text-primary-dark '>
+      <div className='flex-1 flex flex-row lg:flex-col lg:items-center justify-center gap-8'>
+        {/* ----------- TEXT LEFT */}
+        <div className='shrink-0 w-[360px] pt-12 lg:pt-0 lg:w-full flex flex-col gap-8 lg:px-4 items-end lg:items-center'>
+          <h2 className='text-4xl font-semibold text-primary-dark'>
             Testimonial
           </h2>
 
@@ -25,9 +25,9 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
             <p>Tanggapan Klien</p>
           </div>
 
-          <div className='flex flex-col items-start text-primary'>
+          <div className='flex flex-col items-end text-primary'>
             <QuoteUp variant='Bold' size={36} />
-            <p className='text-4xl leading-relaxed max-w-[448px]'>
+            <p className='text-4xl leading-relaxed text-right'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. At,
               facere.
             </p>
@@ -41,14 +41,10 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
             Lihat Testimoni Lainnya
           </Link>
         </div>
-        {/* ----------- VIDEO LEFT */}
-        <Suspense
-          fallback={
-            <div className='w-[680px] h-[540px] bg-gray-200 animate-pulse'></div>
-          }
-        >
+        {/* ----------- VIDEO RIGHT */}
+        <div className='flex justify-end'>
           <TestimonialVideo videoSrc={videoSrc} />
-        </Suspense>
+        </div>
       </div>
     </div>
   );
