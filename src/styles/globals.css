@@ -9,10 +9,10 @@ main {
 }
 
 img,
-video {
+video,
+.disable-user-actions {
   -webkit-user-select: none;
   -webkit-user-drag: none;
-  user-zoom: none;
   user-select: none;
 }
 
@@ -20,4 +20,28 @@ video {
 .animation-count-2 {
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
+}
+
+/* ............... thin-scrollbar  */
+/* For Chrome, Safari, and Opera */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* For Chrome, Safari, and Opera */
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--n-3);
+  border-radius: 3px;
+}
+
+/* For Firefox */
+.thin-scrollbar {
+  scrollbar-color: grey transparent;
+  scrollbar-width: thin;
+}
+
+/* For Firefox */
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--n-3);
+  border-radius: 3px;
 }
