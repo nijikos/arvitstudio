@@ -15,7 +15,7 @@ export default function Furniture({ test }: FurnitureProps) {
       <Hero />
       <Promo />
       <Benefits />
-      <Testimonial videoSrc='/videos/promo-video-1.mp4' />
+      <Testimonial videoSrc='/videos/testimoni/1.mp4' />
       <Portfolio />
     </div>
   );
