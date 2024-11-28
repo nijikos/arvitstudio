@@ -3,6 +3,9 @@ import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
 import "@/styles/rootVariables.css";
+import "react-slideshow-image/dist/styles.css";
+import ScrollToTop from "@/ui/ScrollToTop";
+import WhatsappButton from "@/ui/WhatsappButton";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -63,6 +66,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Component {...pageProps} />
+      <ScrollToTop />
+      <WhatsappButton />
     </main>
   );
 }
