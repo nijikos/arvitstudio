@@ -7,7 +7,8 @@ type TestimonialVideoProps = {
 export default function TestimonialVideo({ videoSrc }: TestimonialVideoProps) {
   return (
     <video
-      className='w-[500px] h-[80vh] lg:w-full object-cover'
+      onContextMenu={(e) => e.preventDefault()}
+      className='w-[500px] h-[80vh] lg:w-full object-cover disable-user-actions'
       width={500}
       height={1000}
       controls
@@ -15,6 +16,8 @@ export default function TestimonialVideo({ videoSrc }: TestimonialVideoProps) {
       autoPlay
       muted
       loop
+      disablePictureInPicture
+      controlsList='nofullscreen'
     >
       <source src={videoSrc} type='video/mp4' />
     </video>
