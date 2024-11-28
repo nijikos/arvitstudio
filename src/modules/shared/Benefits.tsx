@@ -28,7 +28,7 @@ export default function Benefits({ test }: BenefitsProps) {
   return (
     <div
       id='benefits'
-      className='w-full flex items-center justify-center py-24 px-32 lg:px-6 bg-gray-50'
+      className='w-full flex items-center justify-center py-24 px-32 lg:px-6'
     >
       <div className='flex-1 max-w-[1200px] flex flex-col items-center justify-center gap-8'>
         {/* --------- QUESTIONS */}
