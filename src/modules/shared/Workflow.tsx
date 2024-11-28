@@ -26,7 +26,8 @@ export default function Workflow({ test }: WorkflowProps) {
         </div>
         {/* ------------- DIAGRAM */}
         <Image
-          className='h-fit md:hidden object-cover'
+          onContextMenu={(e) => e.preventDefault()}
+          className='h-fit md:hidden object-cover disable-user-actions'
           src={"/images/furniture/workflow-grid-2-2x.png"}
           width={2400}
           height={2000}
@@ -35,7 +36,8 @@ export default function Workflow({ test }: WorkflowProps) {
           blurDataURL='/images/defaultimg.jpg'
         />
         <Image
-          className='h-fit hidden md:inline-block object-cover'
+          onContextMenu={(e) => e.preventDefault()}
+          className='h-fit hidden md:inline-block object-cover disable-user-actions'
           src={"/images/furniture/workflow-grid-1-2x.png"}
           width={2400}
           height={2000}
