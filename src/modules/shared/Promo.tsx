@@ -20,7 +20,7 @@ export default function Promo({ test }: PromoProps) {
           <VideoComponent />
         </Suspense>
         {/* ----------- TEXT RIGHT */}
-        <div className='w-[480px] md:w-screen flex flex-col gap-8 lg:px-4 items-center pt-12 lg:pt-0'>
+        <div className='w-[480px] md:w-full flex flex-col gap-8 lg:px-4 items-center pt-12 lg:pt-0'>
           <h2 className='text-4xl font-semibold text-primary-dark text-center'>
             Promo Terbaru
           </h2>

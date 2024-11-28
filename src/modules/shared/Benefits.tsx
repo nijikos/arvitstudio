@@ -26,7 +26,7 @@ export default function Benefits({ test }: BenefitsProps) {
     },
   ];
   return (
-    <div id='benefits' className='px-20 lg:px-6 py-28'>
+    <div id='benefits' className='px-20 lg:px-6 py-28 lg:pb-0'>
       {/* --------- QUESTIONS */}
       <div className='flex flex-col items-center justify-center gap-12 text-2xl lg:text-xl text-primary relative'>
         {questions.map((q, ii) => {
