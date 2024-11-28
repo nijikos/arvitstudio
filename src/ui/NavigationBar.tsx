@@ -30,16 +30,16 @@ export default function NavigationBar({ test }: NavigationBarProps) {
   const navItems = [
     { label: "Promo", href: "#promo" },
     { label: "Benefits", href: "#benefits" },
+    { label: "Testimoni", href: "#testimonials" },
+    { label: "Portfolio", href: "#portfolio" },
     { label: "Why Arvit?", href: "#whyarvit" },
     { label: "Alur Kerja", href: "#workflow" },
-    { label: "Portfolio", href: "#portfolio" },
     { label: "Pricelist", href: "#prices" },
-    { label: "Testimoni", href: "#testimonials" },
     { label: "Hubungi Kami", href: "#contactus" },
   ];
   return (
     <div
-      className={`z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-20 lg:px-6 py-6 transition-all ${
+      className={`z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-20 xl:px-10 py-6 transition-all ${
         scrolled ? "bg-primary shadow-lg" : "bg-transparent"
       }`}
     >
@@ -54,7 +54,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
       </Link>
 
       {/* ------------- Horizontal Menu */}
-      <nav className='flex flex-row items-center gap-8 lg:hidden'>
+      <nav className='flex flex-row items-center gap-8 xl:hidden'>
         {navItems.map((nav, ii) => {
           return (
             <a
@@ -68,9 +68,9 @@ export default function NavigationBar({ test }: NavigationBarProps) {
         })}
       </nav>
       {/* ------------- Vertical Menu */}
-      <div className='hidden lg:inline-block relative'>
+      <div className='hidden xl:inline-block relative'>
         <button
-          className='text-white hidden lg:inline-block'
+          className='text-white hidden xl:inline-block'
           onClick={() => {
             setShowMenu(true);
           }}
@@ -82,7 +82,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
           className='data-[show=false]:translate-x-full data-[show=true]:translate-x-0 flex flex-col items-end bg-white fixed top-0 right-0 w-[60vw] sm:w-screen h-screen transition-all ease-in-out duration-300 border-l-4 border-primary-dark'
         >
           <button
-            className='text-primary hidden lg:inline-block pr-6 py-6'
+            className='text-primary hidden xl:inline-block pr-6 py-6'
             onClick={() => {
               setShowMenu(false);
             }}
