@@ -21,7 +21,7 @@ export default function Hero({ test }: HeroProps) {
       {/* --------- HERO IMAGE */}
       <Image
         alt='hero furniture image'
-        src={`/images/furniture/hero-furniture-3.png`}
+        src={`/images/furniture/hero-furniture-4.png`}
         width={1024}
         height={1024}
         className='w-[60vw] h-[76vh] lg:h-[600px] md:w-full absolute right-0 bottom-0 object-cover rounded-tl-[80px] md:rounded-none'
