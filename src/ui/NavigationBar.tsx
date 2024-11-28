@@ -34,6 +34,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
     { label: "Portfolio", href: "#portfolio" },
     { label: "Why Arvit?", href: "#whyarvit" },
     { label: "Alur Kerja", href: "#workflow" },
+    { label: "Tim", href: "#team" },
     { label: "Pricelist", href: "#prices" },
     { label: "Hubungi Kami", href: "#contactus" },
   ];
