@@ -7,6 +7,7 @@ import Portfolio from "@/modules/furniture/sections/Portfolio";
 import WhyArvit from "@/modules/shared/WhyArvit";
 import Workflow from "@/modules/shared/Workflow";
 import Team from "@/modules/shared/Team";
+import Footer from "@/modules/shared/Footer";
 
 type FurnitureProps = {
   test?: string;
@@ -23,6 +24,7 @@ export default function Furniture({ test }: FurnitureProps) {
       <WhyArvit />
       <Workflow />
       <Team />
+      <Footer />
     </div>
   );
 }
