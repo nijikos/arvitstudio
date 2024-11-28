@@ -26,7 +26,7 @@ const ImageSlideShow = ({ images }: ImageSlideShowProps) => {
               height={840}
               placeholder='blur'
               alt='Portfolio Image'
-              blurDataURL='/images/defaultimg.png'
+              blurDataURL='/images/defaultimg.jpg'
             />
           </div>
         );
