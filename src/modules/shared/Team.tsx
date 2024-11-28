@@ -36,7 +36,7 @@ export default function Team({ test }: TeamProps) {
               tenaga arsitek, sipil dan tim tukang yang terpercaya dan
               berpengalaman mulai dari residensial hingga komersil.
             </p>
-            <div className='flex flex-row items-center gap-4 bg-accent text-primary-dark w-fit px-8 sm:px-4 py-4 sm:py-3 rounded-full text-sm sm:text-xs'>
+            <div className='flex flex-row items-center gap-4 sm:gap-2 bg-accent text-primary-dark w-fit px-8 sm:px-4 py-4 sm:py-3 rounded-full text-sm sm:text-xs'>
               <Teacher size={16} />
               <p>Arsitek Interior - Universitas Indonesia{`'`} 2012</p>
             </div>
