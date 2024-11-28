@@ -48,7 +48,7 @@ export default function Workflow({ test }: WorkflowProps) {
         <Link
           target='_blank'
           href={whatsappLink.link}
-          className='button-lg w-80 lg:button-md lg:text-sm button-contain-accent mx-auto'
+          className='button-xl w-80 lg:button-md lg:text-sm button-contain-accent mx-auto'
         >
           Konsultasi Sekarang
         </Link>

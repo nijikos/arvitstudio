@@ -47,7 +47,7 @@ export default function Promo({ test }: PromoProps) {
           <Link
             target='_blank'
             href={whatsappLink.link}
-            className='button-lg w-80 lg:button-md lg:text-sm button-contain-accent'
+            className='button-xl w-80 lg:button-md lg:text-sm button-contain-accent'
           >
             Konsultasi Sekarang
           </Link>
