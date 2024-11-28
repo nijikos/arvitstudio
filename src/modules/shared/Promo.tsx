@@ -53,7 +53,7 @@ export default function Promo({ test }: PromoProps) {
           </Link>
         </div>
         {/* ----------- VIDEO RIGHT */}
-        <div className='flex justify-end'>
+        <div data-aos='fade-up' className='flex justify-end '>
           <VideoComponent />
         </div>
       </div>

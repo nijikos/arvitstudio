@@ -42,7 +42,7 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
           </Link>
         </div>
         {/* ----------- VIDEO RIGHT */}
-        <div className='flex justify-end'>
+        <div data-aos='fade-up' className='flex justify-end'>
           <TestimonialVideo videoSrc={videoSrc} />
         </div>
       </div>

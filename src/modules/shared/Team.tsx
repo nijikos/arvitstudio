@@ -42,7 +42,7 @@ export default function Team({ test }: TeamProps) {
             </div>
           </div>
           {/* ----------- FOTO RIGHT */}
-          <div className='col-span-1 md:col-span-2 relative'>
+          <div data-aos='fade-up' className='col-span-1 md:col-span-2 relative'>
             <Image
               onContextMenu={(e) => e.preventDefault()}
               className='max-w-full h-[480px] object-cover disable-user-actions'

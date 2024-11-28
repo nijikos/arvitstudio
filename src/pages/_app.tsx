@@ -1,11 +1,22 @@
+// ---------- REACT/NEXT ----------
+import { useEffect } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
+// ---------- FONT ----------
 import { Poppins } from "next/font/google";
+// ---------- CSS ----------
 import "@/styles/globals.css";
 import "@/styles/rootVariables.css";
 import "react-slideshow-image/dist/styles.css";
+import "aos/dist/aos.css";
+// ---------- COMPONENTS ----------
 import ScrollToTop from "@/ui/ScrollToTop";
 import WhatsappButton from "@/ui/WhatsappButton";
+// ---------- TYPES ----------
+// ---------- LIBRARIES ----------
+import AOS from "aos";
+// ---------- DATA ----------
+// ---------- HELPERS ----------
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -15,6 +26,15 @@ const poppins = Poppins({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+    return () => {
+      AOS.refreshHard();
+    };
+  }, []);
   return (
     <main
       id='arvit'

@@ -44,6 +44,7 @@ export default function Benefits({ test }: BenefitsProps) {
         {/* --------- SOLUTIONS */}
         <div className='grid grid-cols-2 gap-x-8 lg:place-items-center'>
           <div
+            data-aos='fade-up'
             onContextMenu={(e) => e.preventDefault()}
             className='col-span-1 lg:col-span-2 h-fit relative disable-user-actions'
           >
