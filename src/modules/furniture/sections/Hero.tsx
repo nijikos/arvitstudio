@@ -35,10 +35,10 @@ export default function Hero({ test }: HeroProps) {
           <p className='font-light lg:text-sm lg:w-fit'>
             Hemat waktu, biaya, dan energi.
           </p>
-          <p className='font-light lg:text-sm lg:w-fit'>
+          <h1 className='font-light lg:text-sm lg:w-fit'>
             Arvit Studio mewujudkan hunian impian Anda secara TEPAT, EFISIEN,
             ESTETIK
-          </p>
+          </h1>
         </div>
         <div className='flex flex-row gap-2 items-center text-accent lg:text-accent-dark'>
           <Location className='lg:w-5' />
