@@ -26,34 +26,46 @@ export default function Benefits({ test }: BenefitsProps) {
     },
   ];
   return (
-    <div id='benefits' className='px-20 lg:px-6 py-28 lg:pb-0'>
-      {/* --------- QUESTIONS */}
-      <div className='flex flex-col items-center justify-center gap-12 text-2xl lg:text-xl text-primary relative'>
-        {questions.map((q, ii) => {
-          return (
-            <p className='text-center max-w-[720px] w-fit' key={ii}>
-              {q}
-            </p>
-          );
-        })}
-      </div>
-      {/* --------- */}
-      <div className='py-20'>
-        <p className='text-4xl font-semibold text-center mb-8'>
-          Di Arvit Studio
-        </p>
-        <div className='flex flex-row lg:flex-col gap-12 items-start lg:items-center justify-center'>
-          <Image
-            className='object-cover w-[480px] h-[500px]'
-            src={`/images/furniture/benefit-1.jpg`}
-            alt='Benefit Image'
-            width={566}
-            height={848}
-          />
-          <div className='flex flex-col gap-12'>
+    <div
+      id='benefits'
+      className='w-full flex items-center justify-center py-24 px-32 lg:px-6 bg-gray-50'
+    >
+      <div className='flex-1 max-w-[1200px] flex flex-col items-center justify-center gap-8'>
+        {/* --------- QUESTIONS */}
+        <div className='flex flex-col items-center justify-center gap-12 text-2xl lg:text-xl text-primary relative'>
+          {questions.map((q, ii) => {
+            return (
+              <p className='text-center max-w-[720px] w-fit' key={ii}>
+                {q}
+              </p>
+            );
+          })}
+        </div>
+        {/* --------- SOLUTIONS */}
+        <div className='grid grid-cols-2 gap-x-8 lg:place-items-center'>
+          <div
+            onContextMenu={(e) => e.preventDefault()}
+            className='col-span-1 lg:col-span-2 h-fit relative disable-user-actions'
+          >
+            <Image
+              className='disable-user-actions'
+              src={`/images/furniture/benefit-2.png`}
+              alt='Benefit Image'
+              width={800}
+              height={800}
+            />
+            <Image
+              className='absolute bottom-12 right-8 w-16 disable-user-actions'
+              src={`/images/logo/arvit-logo-portrait.svg`}
+              width={100}
+              height={100}
+              alt='Arvit Watermark'
+            />
+          </div>
+          <div className='col-span-1 lg:col-span-2 pt-12 flex flex-col gap-4'>
             {benefits.map((b, ii) => {
               return (
-                <div key={ii} className='max-w-[580px] w-fit'>
+                <div key={ii} className='w-fit'>
                   <p className='font-semibold text-2xl mb-4 text-primary-dark'>
                     {b.title}
                   </p>
