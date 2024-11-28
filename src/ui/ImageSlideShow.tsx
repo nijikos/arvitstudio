@@ -1,3 +1,4 @@
+import { ArrowCircleLeft, ArrowCircleRight } from "iconsax-react";
 import Image from "next/image";
 import React from "react";
 import { Slide } from "react-slideshow-image";
@@ -12,7 +13,17 @@ const ImageSlideShow = ({ images }: ImageSlideShowProps) => {
     <Slide
       canSwipe={true}
       autoplay={false}
-      arrows={false}
+      arrows={true}
+      prevArrow={
+        <button className='text-white h-full px-2'>
+          <ArrowCircleLeft variant='Bold' />
+        </button>
+      }
+      nextArrow={
+        <button className='text-white h-full px-2'>
+          <ArrowCircleRight variant='Bold' />
+        </button>
+      }
       indicators={true}
       duration={5000}
       transitionDuration={800}
