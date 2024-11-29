@@ -23,7 +23,7 @@ type PriceItemProps = {
 export default function PriceItem({ price }: PriceItemProps) {
   const [showRincian, setShowRincian] = useState<boolean>(false);
   return (
-    <div className='w-[400px] lg:w-[90vw] shrink-0 bg-primary-white overflow-hidden h-fit'>
+    <div className='w-[400px] lg:w-[90vw] shrink-0 bg-white overflow-hidden h-fit'>
       {/* ------------ IMAGE THUMBNAIL */}
       <div className=''>
         <Image
@@ -37,7 +37,7 @@ export default function PriceItem({ price }: PriceItemProps) {
       {/* ------------ DESCRIPTION */}
       <div className='py-8 px-6 flex flex-col gap-4'>
         <div>
-          <p className='text-primary'>{price.title}</p>
+          <p className='text-primary-lighter'>{price.title}</p>
           <div className='flex flex-row items-center justify-between'>
             <p className='text-4xl md:text-3xl text-primary'>{price.total}</p>
             <button
@@ -60,8 +60,8 @@ export default function PriceItem({ price }: PriceItemProps) {
           {price.rincian.map((rinci, ii) => {
             return (
               <div key={ii} className='grid grid-cols-2 gap-4'>
-                <p className='col-span-1'>{rinci.label}</p>
-                <p className='col-span-1 text-right text-accent-dark'>
+                <p className='col-span-1 font-medium'>{rinci.label}</p>
+                <p className='col-span-1 text-right text-primary-lighter'>
                   {rinci.price}
                 </p>
               </div>

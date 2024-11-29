@@ -58,3 +58,18 @@ video,
   scrollbar-color: var(--primary) transparent;
   scrollbar-width: 10px;
 }
+
+.white-thin-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* For Chrome, Safari, and Opera */
+.white-thin-scrollbar::-webkit-scrollbar-thumb {
+  scrollbar-color: white transparent;
+  border-radius: 10px;
+}
+
+.white-thin-scrollbar {
+  scrollbar-color: white transparent;
+  scrollbar-width: 10px;
+}

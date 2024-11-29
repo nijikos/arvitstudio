@@ -111,20 +111,20 @@ export default function Price({ test }: PriceProps) {
         </p>
       </div>
 
-      <div className='w-full overflow-x-auto flex flex-row gap-10 flex-nowrap px-32 lg:pl-6 pb-8 thin-scrollbar'>
+      <div className='w-full overflow-x-auto flex flex-row gap-10 flex-nowrap px-32 lg:pl-6 thin-scrollbar'>
         {prices.map((price, ii) => {
           return <PriceItem key={ii} price={price} />;
         })}
       </div>
 
-      <div className='w-full px-32 md:px-6 py-12 flex flex-col gap-8 items-center text-center'>
+      <div className='w-full px-32 md:px-6 py-12 flex flex-col gap-8 items-center text-center mt-10 bg-accent-lightest/60'>
         <p className='max-w-[800px] text-xl md:text-lg'>
           Masih Bingung? Ingin Rincian Harga yang Lebih Custom?
         </p>
         <Link
           target='_blank'
           href={whatsappLink.link}
-          className='button-xl lg:button-md lg:text-sm button-outline-primary'
+          className='button-xl lg:button-md lg:text-sm button-contain-primary'
         >
           Konsultasikan biaya pembangunan
         </Link>

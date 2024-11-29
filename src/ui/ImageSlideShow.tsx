@@ -33,7 +33,7 @@ const ImageSlideShow = ({ images }: ImageSlideShowProps) => {
           <div key={ii} className='each-slide-effect'>
             <Image
               loading='lazy'
-              className='bound w-full h-[400px] lg:h-[300px] object-cover'
+              className='w-full h-[400px] lg:h-[300px] object-cover'
               src={image}
               width={840}
               height={840}

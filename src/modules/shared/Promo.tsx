@@ -11,7 +11,7 @@ export default function Promo({ test }: PromoProps) {
   return (
     <div
       id='promo'
-      className='flex items-center justify-center py-24 px-32 lg:px-6 bg-gray-50'
+      className='flex items-center justify-center py-24 px-32 lg:px-6 bg-gray-100'
     >
       <div className='flex-1 flex flex-row lg:flex-col lg:items-center justify-center gap-8'>
         {/* ----------- TEXT LEFT */}

@@ -13,19 +13,19 @@ export default function TimProfilePicture({
   return (
     <div
       data-aos='fade-up'
-      className={twMerge("col-span-1 md:col-span-2", className)}
+      className={twMerge("col-span-1 md:col-span-2 w-full h-full", className)}
     >
       <Image
         onContextMenu={(e) => e.preventDefault()}
-        className='max-w-full h-[500px] object-cover object-top disable-user-actions'
-        src={"/images/tim/profile-nobg-cropped-4.png"}
+        className='w-80 h-full object-cover object-top disable-user-actions mx-auto'
+        src={"/images/tim/profile-nobg-cropped-3.png"}
         width={1024}
         height={1024}
         placeholder='blur'
         alt='Portfolio Image'
         blurDataURL='/images/defaultimg.jpg'
       />
-      <div className='bg-primary-darker text-white px-8 sm:px-4 py-6 w-fit absolute bottom-4 right-0 border-t-4 border-accent flex flex-col gap-2 items-end'>
+      <div className='bg-primary-darker text-white px-8 sm:px-4 py-6 w-fit absolute bottom-6 right-0 border-t-4 border-accent flex flex-col gap-2 items-end'>
         <p className='text-xl sm:text-lg font-semibold'>
           Jaila Muhardila S.Ars
         </p>
