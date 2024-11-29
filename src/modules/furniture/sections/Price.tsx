@@ -23,7 +23,7 @@ export default function Price({ test }: PriceProps) {
       ],
     },
     {
-      image: "/images/pricelist/tamu-x.jpg",
+      image: "/images/pricelist/tamu-2.jpg",
       title: "Ruang Tamu",
       total: "Rp 7.000.000",
       rincian: [
@@ -119,7 +119,7 @@ export default function Price({ test }: PriceProps) {
 
       <div className='w-full px-32 md:px-6 py-12 flex flex-col gap-8 items-center text-center mt-10 bg-accent-lightest/60'>
         <p className='max-w-[800px] text-xl md:text-lg'>
-          Masih Bingung? Ingin Rincian Harga yang Lebih Custom?
+          Sulit Menemukan Furnitur yang Pas Untuk Ruang Kecil atau Sudut Khusus?
         </p>
         <Link
           target='_blank'

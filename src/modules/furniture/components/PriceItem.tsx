@@ -23,7 +23,7 @@ type PriceItemProps = {
 export default function PriceItem({ price }: PriceItemProps) {
   const [showRincian, setShowRincian] = useState<boolean>(false);
   return (
-    <div className='w-[400px] lg:w-[90vw] shrink-0 bg-white overflow-hidden h-fit'>
+    <div className='w-[400px] lg:w-[90vw] shrink-0 bg-accent-lightest/40 overflow-hidden h-fit'>
       {/* ------------ IMAGE THUMBNAIL */}
       <div className=''>
         <Image
