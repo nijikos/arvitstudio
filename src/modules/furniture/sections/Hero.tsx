@@ -19,7 +19,7 @@ export default function Hero({ test }: HeroProps) {
       {/* --------- Navigation Bar */}
       <NavigationBar />
       {/* --------- HERO IMAGE */}
-      <div className='w-[60vw] h-[76vh] lg:h-[600px] md:w-full absolute right-0 bottom-0 rounded-tl-[80px] md:rounded-none hero-img'></div>
+      <div className='w-[60vw] xl:w-[70vw] md:w-full h-[76vh] lg:h-[600px] absolute right-0 bottom-0 rounded-tl-[80px] md:rounded-none hero-img'></div>
       {/* --------- HERO TEXT */}
       <div className='z-10 absolute left-0 bottom-0 flex flex-col gap-4 text-white pl-40 3xl:pl-20 lg:px-6 pb-12'>
         <p className='w-[820px] lg:w-fit font-semibold text-8xl lg:text-5xl drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]'>
