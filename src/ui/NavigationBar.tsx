@@ -40,13 +40,13 @@ export default function NavigationBar({ test }: NavigationBarProps) {
   ];
   return (
     <div
-      className={`z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-20 xl:px-10 py-6 transition-all ${
+      className={`z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-20 xl:px-10 md:px-6 py-6 transition-all ${
         scrolled ? "bg-primary shadow-lg" : "bg-transparent"
       }`}
     >
       <Link href='/furniture'>
         <Image
-          className='min-w-48 w-48 hover:scale-[101%] transition-all'
+          className='min-w-48 w-48 md:min-w-36 md:w-36 hover:scale-[101%] transition-all'
           src='/images/logo/arvit-logo-gold-landscape.svg'
           height={520}
           width={2011}
