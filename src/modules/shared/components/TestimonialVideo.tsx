@@ -8,7 +8,7 @@ export default function TestimonialVideo({ videoSrc }: TestimonialVideoProps) {
   return (
     <video
       onContextMenu={(e) => e.preventDefault()}
-      className='w-[500px] h-[80vh] lg:w-full object-cover disable-user-actions'
+      className='w-[500px] h-[78vh] lg:w-full object-cover disable-user-actions'
       width={500}
       height={1000}
       controls

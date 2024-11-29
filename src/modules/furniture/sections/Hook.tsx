@@ -37,7 +37,7 @@ export default function Hook({ test }: HookProps) {
   ];
   return (
     <div
-      id='benefits'
+      id='solusi'
       className='w-full flex items-center justify-center py-24 px-32 lg:px-6 bg-accent-lightest/40'
     >
       <div className='flex-1 max-w-[1200px] flex flex-col items-center justify-center gap-8'>

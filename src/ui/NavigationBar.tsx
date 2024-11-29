@@ -29,7 +29,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
 
   const navItems = [
     { label: "Promo", href: "#promo" },
-    { label: "Benefits", href: "#benefits" },
+    { label: "Solusi", href: "#solusi" },
     { label: "Testimoni", href: "#testimonials" },
     { label: "Portfolio", href: "#portfolio" },
     { label: "Why Arvit?", href: "#whyarvit" },
