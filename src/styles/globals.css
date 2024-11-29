@@ -22,6 +22,26 @@ video,
   animation-iteration-count: 2;
 }
 
+/* ............... Hero Image  */
+@layer utilities {
+  .hero-img {
+    background: url("/images/furniture/hero-furniture-4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @screen md {
+    .hero-img {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url("/images/furniture/hero-furniture-4.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 /* ............... thin-scrollbar  */
 /* For Chrome, Safari, and Opera */
 .thin-scrollbar::-webkit-scrollbar {
