@@ -46,7 +46,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
     >
       <Link href='/furniture'>
         <Image
-          className='min-w-32 w-32 hover:scale-[101%] transition-all'
+          className='min-w-48 w-48 hover:scale-[101%] transition-all'
           src='/images/logo/arvit-logo-gold-landscape.svg'
           height={520}
           width={2011}
@@ -60,7 +60,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
           return (
             <a
               key={ii}
-              className='text-sm font-light text-white hover:text-accent hover:underline underline-offset-8 transition-all'
+              className='text-base font-light text-white hover:text-accent hover:underline underline-offset-8 transition-all'
               href={nav.href}
             >
               {nav.label}
@@ -94,7 +94,7 @@ export default function NavigationBar({ test }: NavigationBarProps) {
             return (
               <a
                 key={ii}
-                className='text-sm font-light text-black hover:text-accent hover:underline underline-offset-8 transition-all py-4 px-4 w-full text-end'
+                className='text-xl font-light text-black hover:text-accent hover:underline underline-offset-8 transition-all py-4 px-4 w-full text-end'
                 href={nav.href}
                 onClick={() => {
                   setShowMenu(false);
