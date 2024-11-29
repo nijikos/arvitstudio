@@ -31,9 +31,12 @@ export default function Team({ test }: TeamProps) {
                   mewujudkan hunianmu.
                 </p>
                 <p className=''>
-                  Tak perlu ragu bekerja sama dengan kami karena kami memiliki
-                  tenaga arsitek, sipil dan tim tukang yang terpercaya dan
-                  berpengalaman mulai dari residensial hingga komersil.
+                  Tak perlu ragu bekerja sama dengan kami karena{" "}
+                  <b>
+                    kami memiliki tenaga arsitek, sipil dan tim tukang yang
+                    terpercaya dan berpengalaman
+                  </b>{" "}
+                  mulai dari residensial hingga komersil.
                 </p>
               </div>
 

@@ -20,8 +20,8 @@ export default function Workflow({ test }: WorkflowProps) {
             Alur Kerja
           </h2>
           <p className='font-light'>
-            Proses mudah, transparan, dan terstruktur untuk mewujudkan rumah
-            impianmu tanpa ribet
+            Proses mudah, transparan, dan terstruktur untuk mewujudkan furnitur
+            interior impianmu tanpa ribet
           </p>
         </div>
         {/* ------------- DIAGRAM */}

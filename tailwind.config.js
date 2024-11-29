@@ -30,6 +30,21 @@ const config = {
         99: "99%",
         102: "102%",
       },
+      animation: {
+        cbounce: "custom-bounce 1s infinite", // Use your custom bounce animation
+      },
+      keyframes: {
+        "custom-bounce": {
+          "0%, 100%": {
+            transform: "translateY(-10%)",
+            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+          }, // Lower bounce
+          "50%": {
+            transform: "translateY(0)",
+            animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+      },
     },
   },
   plugins: [

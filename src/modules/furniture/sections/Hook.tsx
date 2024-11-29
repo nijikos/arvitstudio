@@ -16,10 +16,10 @@ export default function Hook({ test }: HookProps) {
       </span>
     </span>,
     <span key={5} className='text-2xl lg:text-xl'>
-      Arvit Studio merupakan penyedia jasa desain dan bangun arsitektur dan
-      interior yang telah berdiri sejak tahun 2019. Dengan pengalaman pekerja
-      profesional kami yang lebih dari 10 tahun, Tidak ada lagi furnitur dan
-      desain yang tidak cocok, kami memberikan{" "}
+      <b>Arvit Studio</b> merupakan penyedia jasa desain dan bangun arsitektur
+      dan interior yang telah berdiri sejak tahun 2019. Dengan pengalaman{" "}
+      <u>pekerja profesional kami yang lebih dari 10 tahun</u>, Tidak ada lagi
+      furnitur dan desain yang tidak cocok, kami memberikan{" "}
       <span className='font-semibold text-primary text-2xl lg:text-xl'>
         solusi tepat untuk kebutuhan Anda.
       </span>

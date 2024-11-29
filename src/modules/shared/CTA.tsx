@@ -29,7 +29,7 @@ export default function CTA({ test }: CTAProps) {
         <p className='max-w-[800px] text-6xl md:text-3xl font-semibold text-primary'>
           50+ Pelanggan Puas
         </p>
-        <p className='max-w-[800px] text-xl md:text-lg'>
+        <p className='max-w-[800px] text-xl md:text-lg bg-error-lightest px-4 py-6 rounded-2xl border-r-4 border-b-4 border-error text-error animate-cbounce'>
           Jadilah salah satu dari 10 klien pertama di bulan ini dan dapatkan
           konsultasi desain gratis
         </p>

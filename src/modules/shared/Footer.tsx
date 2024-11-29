@@ -66,7 +66,7 @@ export default function Footer({ test }: FooterProps) {
               <Location className='relative top-2 shrink-0' />
               <div>
                 <p className='text-2xl font-normal'>Arvit Studio Office</p>
-                <p>
+                <p className='text-base'>
                   Malaka Pratama No.13 A Rt 11/05, Rorotan, Cilincing, Jakut
                   14140
                 </p>
@@ -84,7 +84,9 @@ export default function Footer({ test }: FooterProps) {
               <Location className='relative top-2 shrink-0' />
               <div>
                 <p className='text-2xl font-normal'>Workshop Furnitur</p>
-                <p>Malaka Jaya No.61 Rt 1, Rorotan, Cilincing, Jakut 14140</p>
+                <p className='text-base'>
+                  Malaka Jaya No.61 Rt 1, Rorotan, Cilincing, Jakut 14140
+                </p>
                 <Link
                   href='https://maps.app.goo.gl/6mDDKgjd3MhSU7Mm7'
                   target='_blank'
