@@ -16,7 +16,7 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
       <div className='flex-1 flex flex-row lg:flex-col lg:items-center justify-center gap-8'>
         {/* ----------- TEXT LEFT */}
         <div className='shrink-0 w-[360px] pt-12 lg:pt-0 lg:w-full flex flex-col gap-8 lg:px-4 items-end lg:items-center'>
-          <h2 className='text-5xl font-semibold text-primary-dark'>
+          <h2 className='text-5xl md:text-4xl font-semibold text-primary-dark'>
             Testimonial
           </h2>
 

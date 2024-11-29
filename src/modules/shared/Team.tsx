@@ -16,7 +16,7 @@ export default function Team({ test }: TeamProps) {
             <div className='col-span-1 lg:col-span-2 flex flex-col gap-6 text-xl md:items-center pb-10'>
               {/* ------------- SECTION TITLE */}
               <div className=''>
-                <h2 className='text-5xl md:text-3xl md:text-center font-semibold text-primary-dark '>
+                <h2 className='text-5xl md:text-4xl md:text-center font-semibold text-primary-dark '>
                   Yuk, kenalan dengan tim kami!
                 </h2>
               </div>

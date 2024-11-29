@@ -103,7 +103,7 @@ export default function Price({ test }: PriceProps) {
       onContextMenu={(e) => e.preventDefault()}
     >
       <div className='px-32 lg:px-6 mb-8'>
-        <h2 className='text-5xl font-semibold text-primary-dark '>
+        <h2 className='text-5xl md:text-4xl font-semibold text-primary-dark '>
           Estimasi Biaya
         </h2>
         <p className='font-light'>

@@ -72,7 +72,7 @@ export default function WhyArvit({ test }: WhyArvitProps) {
       <div className='flex-1 max-w-[1200px] flex flex-col lg:items-center lg:justify-center gap-20'>
         {/* ------------- SECTION TITLE */}
         <div className=''>
-          <h2 className='text-5xl font-semibold text-primary-dark '>
+          <h2 className='text-5xl md:text-4xl font-semibold text-primary-dark '>
             Why Arvit?
           </h2>
           <p className='font-light'>
