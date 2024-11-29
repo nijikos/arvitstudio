@@ -43,7 +43,7 @@ export default function ScrollToTop({ test }: ScrollToTopProps) {
   return (
     <button
       data-show={scrolled}
-      className={`fixed bottom-20 right-4 rounded-lg bg-primary-darker hover:bg-primary text-white w-12 h-12 data-[show=false]:hidden data-[show=true]:grid place-items-center `}
+      className={`fixed bottom-20 right-4 rounded-lg bg-primary-darker active:bg-primary-darkest hover:scale-102 active:scale-105 text-white w-12 h-12 data-[show=false]:hidden data-[show=true]:grid place-items-center `}
       onClick={() => {
         scrollToTop();
       }}

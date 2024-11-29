@@ -37,7 +37,7 @@ export default function WhatsappButton({ test }: WhatsappButtonProps) {
     <Link
       target='_blank'
       href={whatsappLink.link}
-      className={`fixed bottom-4 right-4 rounded-xl bg-primary-darker hover:bg-primary text-white w-12 h-12 grid place-items-center transition-all animate-bounce animation-count-2`}
+      className={`fixed bottom-4 right-4 rounded-xl bg-[#4FC65C] hover:scale-102 active:scale-105 text-white w-12 h-12 grid place-items-center transition-all animate-bounce animation-count-2`}
       onClick={() => {
         WhatsappButton();
       }}
