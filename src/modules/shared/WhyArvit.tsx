@@ -67,7 +67,7 @@ export default function WhyArvit({ test }: WhyArvitProps) {
   return (
     <div
       id='whyarvit'
-      className='w-full flex items-center justify-center py-24 px-32 lg:px-6 bg-accent-white'
+      className='w-full flex items-center justify-center py-24 px-32 lg:px-6 bg-accent-lightest/60'
     >
       <div className='flex-1 max-w-[1200px] flex flex-col lg:items-center lg:justify-center gap-20'>
         {/* ------------- SECTION TITLE */}
@@ -87,7 +87,7 @@ export default function WhyArvit({ test }: WhyArvitProps) {
               <div key={ii} className='col-span-1 lg:col-span-2'>
                 <div className='relative mb-4'>
                   <div className='relative z-10'>{item.icon}</div>
-                  <div className='w-9 h-9 bg-accent-lightest rounded-full absolute top-2 left-2'></div>
+                  <div className='w-9 h-9 bg-accent-lighter rounded-full absolute top-2 left-2'></div>
                 </div>
                 <p className='text-2xl font-semibold text-primary'>
                   {item.title}
