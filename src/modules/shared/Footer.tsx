@@ -1,5 +1,5 @@
 import { whatsappLink } from "@/@data/contact";
-import { ExportSquare, Location, Sms } from "iconsax-react";
+import { ExportSquare, Location, Sms, Whatsapp } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -86,7 +86,7 @@ export default function Footer({ test }: FooterProps) {
                 <p className='text-2xl font-normal'>Workshop Furnitur</p>
                 <p>Malaka Jaya No.61 Rt 1, Rorotan, Cilincing, Jakut 14140</p>
                 <Link
-                  href='https://maps.app.goo.gl/Swbp1MAjHjNjGpNY7'
+                  href='https://maps.app.goo.gl/6mDDKgjd3MhSU7Mm7'
                   target='_blank'
                   className='button-md button-outline-accent mt-4 w-fit'
                 >
@@ -116,6 +116,10 @@ export default function Footer({ test }: FooterProps) {
             Konsultasi Sekarang
           </Link>
           <div className='flex flex-col gap-6 mt-12 pb-8'>
+            <div className='flex flex-row items-center gap-4'>
+              <Whatsapp className='shrink-0' />
+              <p>(+62) 822-9888-2360</p>
+            </div>
             <div className='flex flex-row items-center gap-4'>
               <Sms className='shrink-0' />
               <p>arvitstudio@gmail.com</p>
