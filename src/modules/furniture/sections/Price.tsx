@@ -1,14 +1,37 @@
-import { whatsappLink } from "@/@data/contact";
-import Image from "next/image";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
-import React from "react";
 import PriceItem from "../components/PriceItem";
+import { ArrowLeft, ArrowRight } from "iconsax-react";
+import { whatsappLink } from "@/@data/contact";
 
 type PriceProps = {
   test?: string;
 };
 
 export default function Price({ test }: PriceProps) {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const itemsRef = useRef<HTMLDivElement[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleScroll = (direction: "next" | "prev") => {
+    if (scrollContainerRef.current && itemsRef.current[currentIndex]) {
+      const newIndex =
+        direction === "next" ? currentIndex + 1 : currentIndex - 1;
+      if (newIndex < 0 || newIndex >= itemsRef.current.length) return;
+
+      const item = itemsRef.current[newIndex];
+      const scrollOffset =
+        item.offsetLeft - (window.innerWidth - item.offsetWidth) / 2;
+
+      scrollContainerRef.current.scrollTo({
+        left: scrollOffset,
+        behavior: "smooth",
+      });
+
+      setCurrentIndex(newIndex);
+    }
+  };
+
   const prices = [
     {
       image: "/images/pricelist/kamar-1.jpg",
@@ -102,7 +125,7 @@ export default function Price({ test }: PriceProps) {
       className='w-full disable-user-actions select-none py-24 lg:pb-0'
       onContextMenu={(e) => e.preventDefault()}
     >
-      <div className='px-32 lg:px-6 mb-8'>
+      <div className='px-32 lg:px-6 mb-2'>
         <h2 className='text-5xl md:text-4xl font-semibold text-primary-dark '>
           Estimasi Biaya
         </h2>
@@ -111,9 +134,30 @@ export default function Price({ test }: PriceProps) {
         </p>
       </div>
 
-      <div className='w-full overflow-x-auto flex flex-row gap-10 flex-nowrap px-32 lg:pl-6 thin-scrollbar'>
+      <div className='flex flex-row gap-4 items-end justify-end pr-4 mb-4'>
+        <button
+          className='bg-primary-darker w-10 h-10 grid place-items-center text-white rounded-full shadow-lg'
+          onClick={() => handleScroll("prev")}
+        >
+          <ArrowLeft />
+        </button>
+        <button
+          className='bg-primary-darker w-10 h-10 grid place-items-center text-white rounded-full shadow-lg'
+          onClick={() => handleScroll("next")}
+        >
+          <ArrowRight />
+        </button>
+      </div>
+      <div
+        ref={scrollContainerRef}
+        className='w-full overflow-x-auto flex flex-row gap-10 flex-nowrap px-32 lg:px-6 thin-scrollbar'
+      >
         {prices.map((price, ii) => {
-          return <PriceItem key={ii} price={price} />;
+          return (
+            <div key={ii} ref={(el: any) => (itemsRef.current[ii] = el)}>
+              <PriceItem price={price} />
+            </div>
+          );
         })}
       </div>
 

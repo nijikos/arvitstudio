@@ -1,13 +1,36 @@
-import ImageSlideShow from "@/ui/ImageSlideShow";
-import { Location } from "iconsax-react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-import React from "react";
+import ImageSlideShow from "@/ui/ImageSlideShow";
+import { ArrowLeft, ArrowRight, Location } from "iconsax-react";
 
 type PortfolioProps = {
   test?: string;
 };
 
 export default function Portfolio({ test }: PortfolioProps) {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const itemsRef = useRef<HTMLDivElement[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleScroll = (direction: "next" | "prev") => {
+    if (scrollContainerRef.current && itemsRef.current[currentIndex]) {
+      const newIndex =
+        direction === "next" ? currentIndex + 1 : currentIndex - 1;
+      if (newIndex < 0 || newIndex >= itemsRef.current.length) return;
+
+      const item = itemsRef.current[newIndex];
+      const scrollOffset =
+        item.offsetLeft - (window.innerWidth - item.offsetWidth) / 2;
+
+      scrollContainerRef.current.scrollTo({
+        left: scrollOffset,
+        behavior: "smooth",
+      });
+
+      setCurrentIndex(newIndex);
+    }
+  };
+
   const portfolios = [
     {
       title: "Dapur Bu Dyan",
@@ -90,7 +113,7 @@ export default function Portfolio({ test }: PortfolioProps) {
       className='w-full disable-user-actions select-none py-24 lg:pb-0'
       onContextMenu={(e) => e.preventDefault()}
     >
-      <div className='px-32 lg:px-6 mb-8'>
+      <div className='px-32 lg:px-6 mb-2'>
         <h2 className='text-5xl md:text-4xl font-semibold text-primary-dark '>
           Portfolio
         </h2>
@@ -98,12 +121,29 @@ export default function Portfolio({ test }: PortfolioProps) {
           Koleksi proyek kami yang telah sukses memuaskan klien
         </p>
       </div>
-
-      <div className='w-full overflow-x-auto flex flex-row gap-20 flex-nowrap px-32 lg:pl-6 thin-scrollbar'>
+      <div className='flex flex-row gap-4 items-end justify-end pr-4 mb-4'>
+        <button
+          className='bg-primary-darker w-10 h-10 grid place-items-center text-white rounded-full shadow-lg'
+          onClick={() => handleScroll("prev")}
+        >
+          <ArrowLeft />
+        </button>
+        <button
+          className='bg-primary-darker w-10 h-10 grid place-items-center text-white rounded-full shadow-lg'
+          onClick={() => handleScroll("next")}
+        >
+          <ArrowRight />
+        </button>
+      </div>
+      <div
+        ref={scrollContainerRef}
+        className='w-full overflow-x-auto flex flex-row gap-20 flex-nowrap px-32 lg:px-6 thin-scrollbar'
+      >
         {portfolios.map((portfolio, ii) => {
           return (
             <div
               key={ii}
+              ref={(el: any) => (itemsRef.current[ii] = el)}
               className='w-[680px] lg:w-[95vw] shrink-0 bg-gray-100'
             >
               {/* ------------ IMAGE THUMBNAIL */}
