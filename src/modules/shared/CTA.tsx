@@ -10,7 +10,7 @@ export default function CTA({ test }: CTAProps) {
   return (
     <div
       id='contactus'
-      className='w-full bg-accent-white px-32 md:px-6 py-40 flex flex-col gap-8 items-center text-center'
+      className='w-full bg-accent-lightest/60 px-32 md:px-6 py-40 flex flex-col gap-8 items-center text-center'
     >
       <p className='max-w-[800px] text-xl md:text-lg'>
         Lebih dari 50 proyek sukses telah kami wujudkan, dengan ratusan klien
