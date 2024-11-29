@@ -97,7 +97,7 @@ export default function Portfolio({ test }: PortfolioProps) {
         </p>
       </div>
 
-      <div className='w-full overflow-x-auto flex flex-row gap-20 flex-nowrap pl-32 lg:pl-6 pb-8 thin-scrollbar'>
+      <div className='w-full overflow-x-auto flex flex-row gap-20 flex-nowrap px-32 lg:pl-6 pb-8 thin-scrollbar'>
         {portfolios.map((portfolio, ii) => {
           return (
             <div key={ii} className='w-[840px] lg:w-screen shrink-0 bg-gray-50'>

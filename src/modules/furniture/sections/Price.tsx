@@ -111,7 +111,7 @@ export default function Price({ test }: PriceProps) {
         </p>
       </div>
 
-      <div className='w-full overflow-x-auto flex flex-row gap-10 flex-nowrap pl-32 lg:pl-6 pb-8 thin-scrollbar'>
+      <div className='w-full overflow-x-auto flex flex-row gap-10 flex-nowrap px-32 lg:pl-6 pb-8 thin-scrollbar'>
         {prices.map((price, ii) => {
           return <PriceItem key={ii} price={price} />;
         })}
