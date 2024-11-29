@@ -5,8 +5,8 @@ import type { AppProps } from "next/app";
 // ---------- FONT ----------
 import { Poppins } from "next/font/google";
 // ---------- CSS ----------
-import "@/styles/globals.css";
 import "@/styles/rootVariables.css";
+import "@/styles/globals.css";
 import "react-slideshow-image/dist/styles.css";
 import "aos/dist/aos.css";
 // ---------- COMPONENTS ----------

@@ -45,23 +45,16 @@ video,
 /* ............... thin-scrollbar  */
 /* For Chrome, Safari, and Opera */
 .thin-scrollbar::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 
 /* For Chrome, Safari, and Opera */
 .thin-scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--n-3);
-  border-radius: 3px;
+  scrollbar-color: var(--primary) transparent;
+  border-radius: 10px;
 }
 
-/* For Firefox */
 .thin-scrollbar {
-  scrollbar-color: grey transparent;
-  scrollbar-width: thin;
-}
-
-/* For Firefox */
-.thin-scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--n-3);
-  border-radius: 3px;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: 10px;
 }
