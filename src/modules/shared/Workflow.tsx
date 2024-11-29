@@ -16,7 +16,7 @@ export default function Workflow({ test }: WorkflowProps) {
       <div className='flex-1 max-w-[1200px] flex flex-col lg:items-center lg:justify-center gap-20'>
         {/* ------------- SECTION TITLE */}
         <div className=''>
-          <h2 className='text-4xl font-semibold text-primary-dark '>
+          <h2 className='text-5xl font-semibold text-primary-dark '>
             Alur Kerja
           </h2>
           <p className='font-light'>
@@ -48,7 +48,7 @@ export default function Workflow({ test }: WorkflowProps) {
         <Link
           target='_blank'
           href={whatsappLink.link}
-          className='button-xl w-80 lg:button-md lg:text-sm button-contain-accent mx-auto'
+          className='button-xl w-80 button-contain-error mx-auto'
         >
           Konsultasi Sekarang
         </Link>

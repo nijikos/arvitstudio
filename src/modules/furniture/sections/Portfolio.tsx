@@ -91,7 +91,7 @@ export default function Portfolio({ test }: PortfolioProps) {
       onContextMenu={(e) => e.preventDefault()}
     >
       <div className='px-32 lg:px-6 mb-8'>
-        <h2 className='text-4xl font-semibold text-primary-dark '>Portfolio</h2>
+        <h2 className='text-5xl font-semibold text-primary-dark '>Portfolio</h2>
         <p className='font-light'>
           Koleksi proyek kami yang telah sukses memuaskan klien
         </p>

@@ -16,7 +16,7 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
       <div className='flex-1 flex flex-row lg:flex-col lg:items-center justify-center gap-8'>
         {/* ----------- TEXT LEFT */}
         <div className='shrink-0 w-[360px] pt-12 lg:pt-0 lg:w-full flex flex-col gap-8 lg:px-4 items-end lg:items-center'>
-          <h2 className='text-4xl font-semibold text-primary-dark'>
+          <h2 className='text-5xl font-semibold text-primary-dark'>
             Testimonial
           </h2>
 
@@ -33,13 +33,6 @@ export default function Testimonial({ videoSrc }: TestimonialProps) {
             </p>
             <QuoteDown variant='Bold' size={36} />
           </div>
-
-          <Link
-            href={"#furniture-hero"}
-            className='button-xl w-72 lg:button-md lg:text-sm button-outline-primary'
-          >
-            Lihat Testimoni Lainnya
-          </Link>
         </div>
         {/* ----------- VIDEO RIGHT */}
         <div data-aos='fade-up' className='flex justify-end'>

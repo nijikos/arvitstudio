@@ -37,7 +37,17 @@ const config = {
     require("tailwind-scrollbar"),
     iOSHeight,
     plugin(function ({ addBase, addComponents, addUtilities }) {
-      addBase({});
+      addBase({
+        p: {
+          "@apply text-lg": {},
+        },
+        span: {
+          "@apply text-lg": {},
+        },
+        button: {
+          "@apply text-lg": {},
+        },
+      });
       addComponents({
         // ------- BOUNDING BOX
         ".bound": {
@@ -71,7 +81,7 @@ const config = {
           "@apply gap-4 rounded-full px-16 py-4 text-lg": {},
         },
         ".button-xl": {
-          "@apply gap-3 rounded-full px-12 py-3.5": {},
+          "@apply gap-3 rounded-full px-12 py-3.5 text-lg": {},
         },
         ".button-lg": {
           "@apply gap-2 rounded-full px-10 py-2": {},

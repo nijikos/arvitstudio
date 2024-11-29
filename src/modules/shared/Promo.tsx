@@ -11,14 +11,12 @@ export default function Promo({ test }: PromoProps) {
   return (
     <div
       id='promo'
-      className='flex items-center justify-center py-24 px-32 lg:px-6 bg-gray-100'
+      className='flex items-center justify-center py-24 px-32 lg:px-6'
     >
       <div className='flex-1 flex flex-row lg:flex-col lg:items-center justify-center gap-8'>
         {/* ----------- TEXT LEFT */}
         <div className='shrink-0 w-[360px] pt-12 lg:pt-0 lg:w-full flex flex-col gap-8 lg:px-4 items-end lg:items-center'>
-          <h2 className='text-4xl font-semibold text-primary-dark'>
-            Promo Terbaru
-          </h2>
+          <h2 className='text-5xl font-semibold text-primary-dark'>Promo</h2>
 
           <div>
             <p className='text-2xl font-semibold text-accent'>CUSTOM KABINET</p>
@@ -49,7 +47,7 @@ export default function Promo({ test }: PromoProps) {
           <Link
             target='_blank'
             href={whatsappLink.link}
-            className='button-xl w-80 lg:button-md lg:text-sm button-contain-accent'
+            className='button-xl w-80 lg:button-md button-contain-error'
           >
             Konsultasi Sekarang
           </Link>

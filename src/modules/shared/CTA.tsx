@@ -36,7 +36,7 @@ export default function CTA({ test }: CTAProps) {
         <Link
           target='_blank'
           href={whatsappLink.link}
-          className='button-xl lg:button-md lg:text-sm button-contain-primary'
+          className='button-xl lg:button-md button-contain-error'
         >
           Konsultasi Sekarang
         </Link>

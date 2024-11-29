@@ -42,13 +42,13 @@ export default function Hero({ test }: HeroProps) {
           <Link
             target='_blank'
             href={whatsappLink.link}
-            className='button-lg lg:button-md lg:text-sm button-contain-accent'
+            className='button-xl lg:button-md button-contain-error'
           >
             Konsultasi Sekarang
           </Link>
           <Link
             href='#portfolio'
-            className='button-lg lg:button-md lg:text-sm button-outline-white'
+            className='button-xl lg:button-md button-contain-accent'
           >
             Lihat Portfolio
           </Link>

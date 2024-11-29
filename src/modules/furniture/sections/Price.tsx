@@ -103,7 +103,7 @@ export default function Price({ test }: PriceProps) {
       onContextMenu={(e) => e.preventDefault()}
     >
       <div className='px-32 lg:px-6 mb-8'>
-        <h2 className='text-4xl font-semibold text-primary-dark '>
+        <h2 className='text-5xl font-semibold text-primary-dark '>
           Estimasi Biaya
         </h2>
         <p className='font-light'>
@@ -117,20 +117,17 @@ export default function Price({ test }: PriceProps) {
         })}
       </div>
 
-      <div className='w-full px-32 md:px-6 py-12 flex flex-col gap-8 items-center text-center mt-10 bg-accent-lightest/60'>
+      <div className='w-full px-32 md:px-6 py-32 flex flex-col gap-8 items-center text-center mt-10 bg-accent-lightest/60'>
         <p className='max-w-[800px] text-xl md:text-lg'>
-          Sulit Menemukan Furnitur yang Pas Untuk Ruang Kecil atau Sudut Khusus?
+          Masih Bingung? Ingin Rincian Harga yang Lebih Custom?
         </p>
         <Link
           target='_blank'
           href={whatsappLink.link}
-          className='button-xl lg:button-md lg:text-sm button-contain-primary'
+          className='button-xl lg:button-md button-contain-error'
         >
-          Konsultasikan biaya pembangunan
+          Konsultasikan kebutuhan furniturmu sekarang juga
         </Link>
-        <p className='max-w-[800px] text-xl md:text-lg'>
-          yang sesuai dengan kebutuhanmu bersama kami.
-        </p>
       </div>
     </div>
   );

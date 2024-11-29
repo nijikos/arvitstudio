@@ -6,11 +6,6 @@ type BenefitsProps = {
 };
 
 export default function Benefits({ test }: BenefitsProps) {
-  const questions = [
-    "Pernah bangun rumah namun sering stress karena over budget?",
-    "Sudah dapat tukang murah tapi susah diarahkan dan hasil desainnya tidak sesuai ekspektasi?",
-    "Punya lahan sempit tapi ingin hunian yang mencukupi semua kebutuhan anggota keluarga?",
-  ];
   const benefits = [
     {
       title: "Anggaran Terkendali",
@@ -31,16 +26,6 @@ export default function Benefits({ test }: BenefitsProps) {
       className='w-full flex items-center justify-center py-24 px-32 lg:px-6'
     >
       <div className='flex-1 max-w-[1200px] flex flex-col items-center justify-center gap-8'>
-        {/* --------- QUESTIONS */}
-        <div className='flex flex-col items-center justify-center gap-12 text-2xl lg:text-xl text-primary relative'>
-          {questions.map((q, ii) => {
-            return (
-              <p className='text-center max-w-[720px] w-fit' key={ii}>
-                {q}
-              </p>
-            );
-          })}
-        </div>
         {/* --------- SOLUTIONS */}
         <div className='grid grid-cols-2 gap-x-8 lg:place-items-center'>
           <div
@@ -50,7 +35,7 @@ export default function Benefits({ test }: BenefitsProps) {
           >
             <Image
               className='disable-user-actions'
-              src={`/images/furniture/benefit-2.png`}
+              src={`/images/furniture/benefit-3.jpg`}
               alt='Benefit Image'
               width={800}
               height={800}

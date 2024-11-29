@@ -71,7 +71,7 @@ export default function PriceItem({ price }: PriceItemProps) {
         <Link
           target='_blank'
           href={whatsappLink.link}
-          className='button-xl lg:button-md lg:text-sm button-contain-accent'
+          className='button-xl lg:button-md button-contain-error'
         >
           Konsultasi Sekarang
         </Link>

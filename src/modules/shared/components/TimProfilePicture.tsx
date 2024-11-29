@@ -30,8 +30,8 @@ export default function TimProfilePicture({
           Jaila Muhardila S.Ars
         </p>
         <p className='sm:text-base'>(founder Arvit Studio)</p>
-        <div className='flex flex-row items-center gap-4 sm:gap-2 bg-accent text-primary-dark w-fit px-3 py-2 rounded-full text-xs'>
-          <Teacher size={16} />
+        <div className='flex flex-row items-center md:items-start gap-4 sm:gap-2 bg-accent text-primary-dark w-fit px-3 py-2 rounded-full md:rounded-none'>
+          <Teacher size={16} className='shrink-0' />
           <p>Arsitek Interior - Universitas Indonesia{`'`} 2012</p>
         </div>
       </div>

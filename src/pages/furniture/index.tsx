@@ -10,6 +10,7 @@ import Team from "@/modules/shared/Team";
 import Footer from "@/modules/shared/Footer";
 import Price from "@/modules/furniture/sections/Price";
 import CTA from "@/modules/shared/CTA";
+import Hook from "@/modules/furniture/sections/Hook";
 
 type FurnitureProps = {
   test?: string;
@@ -20,14 +21,15 @@ export default function Furniture({ test }: FurnitureProps) {
     <div className='scroll-smooth'>
       <Hero />
       <Promo />
+      <Hook />
+      <Portfolio />
       <Benefits />
       <Testimonial videoSrc='/videos/testimoni/1.mp4' />
-      <Portfolio />
       <WhyArvit />
-      <Workflow />
-      <Team />
       <Price />
+      <Workflow />
       <CTA />
+      <Team />
       <Footer />
     </div>
   );
