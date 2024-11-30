@@ -19,43 +19,43 @@ export default function WhyArvit({ test }: WhyArvitProps) {
     {
       title: "50+ Proyek Sukses Terbangun",
       description: "Bukti nyata pengalaman kami dalam mewujudkan rumah impian.",
-      icon: <Buildings size={32} />,
+      icon: <Buildings className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Proses Mudah & Cepat",
       description:
         "Proses yang simpel, tanpa ribet, dan selalu transparan, dari awal hingga akhir.",
-      icon: <CalendarTick size={32} />,
+      icon: <CalendarTick className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Terpercaya Se-Jabodetabek",
       description:
         "Ribuan klien puas di Jabodetabek membuktikan kualitas kami,",
-      icon: <Verify size={32} />,
+      icon: <Verify className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Cara Kerja Jelas",
       description:
         "Setiap langkah kami jelaskan dengan rinci, jadi kamu tahu persis apa yang diharapkan.",
-      icon: <TaskSquare size={32} />,
+      icon: <TaskSquare className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Konsultasi Gratis",
       description:
         "Dapatkan inspirasi desain dan solusi terbaik tanpa biaya, hanya ide-ide segar untuk rumahmu.",
-      icon: <MessageFavorite size={32} />,
+      icon: <MessageFavorite className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Anggaran Jelas",
       description:
         "Kami hargai kepercayaanmu dengan anggaran yang transparan dan tanpa biaya tambahan.",
-      icon: <WalletCheck size={32} />,
+      icon: <WalletCheck className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Desain Sesuai Gaya Hidup",
       description:
         "Desain yang mencerminkan gaya hidup dan kebutuhan unik keluargamu.",
-      icon: <Crown size={32} />,
+      icon: <Crown className='w-8 h-8 md:w-7 md:h-7' />,
     },
     {
       title: "Manajemen Proyek Profesional",
@@ -81,18 +81,25 @@ export default function WhyArvit({ test }: WhyArvitProps) {
           </p>
         </div>
         {/* ------------- LISTS */}
-        <div className='grid grid-cols-2 gap-x-20 gap-y-10'>
+        <div className='grid grid-cols-2 gap-x-20 gap-y-10 md:gap-y-4'>
           {lists.map((item, ii) => {
             return (
-              <div key={ii} className='col-span-1 lg:col-span-2'>
+              <div
+                key={ii}
+                className='col-span-1 lg:col-span-2 md:flex md:flex-row md:items-start md:gap-5'
+              >
                 <div className='relative mb-4'>
                   <div className='relative z-10'>{item.icon}</div>
-                  <div className='w-9 h-9 bg-accent-lighter rounded-full absolute top-2 left-2'></div>
+                  <div className='w-9 h-9 md:w-6 md:h-6 bg-accent-lighter rounded-full absolute top-2 left-2 md:top-3 md:left-3'></div>
                 </div>
-                <p className='text-2xl font-semibold text-primary'>
-                  {item.title}
-                </p>
-                <p className='max-w-[400px]'>{item.description}</p>
+                <div>
+                  <p className='text-2xl md:text-base font-semibold text-primary'>
+                    {item.title}
+                  </p>
+                  <p className='max-w-[400px] md:text-base'>
+                    {item.description}
+                  </p>
+                </div>
               </div>
             );
           })}

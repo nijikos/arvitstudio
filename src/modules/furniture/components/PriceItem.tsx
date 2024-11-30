@@ -37,11 +37,14 @@ export default function PriceItem({ price }: PriceItemProps) {
       {/* ------------ DESCRIPTION */}
       <div className='py-8 px-6 flex flex-col gap-4'>
         <div>
-          <p className='text-primary-lighter'>{price.title}</p>
-          <div className='flex flex-row items-center justify-between'>
-            <p className='text-4xl md:text-3xl text-primary'>{price.total}</p>
+          <p className='text-primary-lighter md:text-lg'>{price.title}</p>
+          <p className='text-4xl md:text-2xl font-semibold text-primary'>
+            {price.total}
+          </p>
+          <div className='flex flex-row items-center justify-between border-t border-accent pt-2 mt-2'>
+            <span className='!text-sm text-primary-dark'>rincian harga</span>
             <button
-              className='text-primary-darker focus:outline-none'
+              className='text-primary-dark focus:outline-none'
               onClick={() => {
                 setShowRincian(!showRincian);
               }}
