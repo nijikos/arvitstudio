@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 // ---------- FONT ----------
-import { Poppins } from "next/font/google";
+import { Poppins, Bungee_Inline } from "next/font/google";
 // ---------- CSS ----------
 import "@/styles/rootVariables.css";
 import "@/styles/globals.css";
@@ -24,6 +24,12 @@ const poppins = Poppins({
   display: "block",
   variable: "--font-poppins",
 });
+const bungee_inline = Bungee_Inline({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "block",
+  variable: "--font-bungee",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -38,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
       id='arvit'
-      className={`${poppins.variable} font-[family-name:var(--font-poppins)]`}
+      className={`${poppins.variable} ${bungee_inline.variable} font-[family-name:var(--font-poppins)]`}
     >
       <Head>
         <title>
