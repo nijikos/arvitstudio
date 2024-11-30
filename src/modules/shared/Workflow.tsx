@@ -28,7 +28,7 @@ export default function Workflow({ test }: WorkflowProps) {
         <Image
           onContextMenu={(e) => e.preventDefault()}
           className='h-fit md:hidden object-cover disable-user-actions'
-          src={"/images/furniture/workflow-grid-2-c.png"}
+          src={"/images/furniture/workflow/grid-2.svg"}
           width={2400}
           height={2000}
           placeholder='blur'
@@ -38,7 +38,7 @@ export default function Workflow({ test }: WorkflowProps) {
         <Image
           onContextMenu={(e) => e.preventDefault()}
           className='h-fit hidden md:inline-block object-cover disable-user-actions'
-          src={"/images/furniture/workflow-grid-1-e.png"}
+          src={"/images/furniture/workflow/grid-1.svg"}
           width={2400}
           height={2000}
           placeholder='blur'
