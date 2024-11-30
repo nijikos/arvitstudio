@@ -73,3 +73,15 @@ video,
   scrollbar-color: white transparent;
   scrollbar-width: 10px;
 }
+
+/* ............... CTA Gradient Bubble  */
+.cta-bubble {
+  /* background: #de6161;
+  background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+  background: linear-gradient(to right, #2657eb, #de6161); */
+  background-image: radial-gradient(
+    circle at top center,
+    var(--primary-lighter),
+    var(--primary-darker)
+  );
+}

@@ -29,9 +29,17 @@ export default function CTA({ test }: CTAProps) {
         <p className='max-w-[800px] text-6xl md:text-3xl font-semibold text-primary'>
           50+ Pelanggan Puas
         </p>
-        <p className='max-w-[800px] text-xl md:text-lg bg-error-lightest px-4 py-6 rounded-2xl border-r-4 border-b-4 border-error text-error animate-cbounce'>
+        <p className='cta-bubble max-w-[800px] !text-2xl md:text-lg text-white px-4 py-6 rounded-2xl border-b-8 border-error animate-cbounce relative font-semibold'>
           Jadilah salah satu dari 10 klien pertama di bulan ini dan dapatkan
-          konsultasi desain gratis
+          konsultasi desain{" "}
+          <span className='!text-4xl text-yellow-300 uppercase'>gratis!!!</span>
+          <Image
+            className='w-20 h-20 lg:w-16 lg:h-16 absolute bottom-0 left-0'
+            src={"/images/cta/megaphone.png"}
+            width={500}
+            height={500}
+            alt='megaphone'
+          />
         </p>
         <Link
           target='_blank'

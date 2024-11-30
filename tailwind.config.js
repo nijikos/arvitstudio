@@ -24,6 +24,7 @@ const config = {
       colors: colors,
       fontFamily: {
         poppins: "var(--font-poppins)",
+        bungee: "var(--font-bungee)",
       },
       scale: {
         98: "98%",
@@ -36,7 +37,7 @@ const config = {
       keyframes: {
         "custom-bounce": {
           "0%, 100%": {
-            transform: "translateY(-10%)",
+            transform: "translateY(-4%)",
             animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
           }, // Lower bounce
           "50%": {
