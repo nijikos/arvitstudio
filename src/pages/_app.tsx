@@ -49,15 +49,15 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>
           Arvit Studio - Desain Interior & Pembuatan Furnitur Murah di Jakarta,
-          Bandung, Depok, Tangerang, Bekasi
+          Bogor, Depok, Tangerang, Bekasi
         </title>
         <meta
           name='description'
-          content='Arvit Studio menyediakan jasa desain interior, pembuatan furnitur, dan kontraktor murah di Jakarta, Bandung, Depok, Tangerang, dan Bekasi. Wujudkan ruang impian Anda dengan solusi modern dan hemat biaya.'
+          content='Arvit Studio menyediakan jasa desain interior, pembuatan furnitur, dan kontraktor murah di Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Wujudkan ruang impian Anda dengan solusi modern dan hemat biaya.'
         />
         <meta
           name='keywords'
-          content='desain interior Jakarta, kontraktor interior Jakarta, jasa desain interior murah, pembuatan furnitur Bandung, furnitur custom Bekasi, desain interior hemat Tangerang, kontraktor Depok, Arvit Studio, desain interior modern, interior rumah Jakarta, desain kantor Jakarta, desain rumah minimalis'
+          content='desain interior Jakarta, kontraktor interior Jakarta, jasa desain interior murah, pembuatan furnitur Bogor, furnitur custom Bekasi, desain interior hemat Tangerang, kontraktor Depok, Arvit Studio, desain interior modern, interior rumah Jakarta, desain kantor Jakarta, desain rumah minimalis'
         />
         <meta name='author' content='Arvit Studio' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property='og:description'
-          content='Jasa desain interior, pembuatan furnitur, dan kontraktor murah di Jakarta, Bandung, Depok, Tangerang, dan Bekasi. Hubungi kami untuk wujudkan ruang impian Anda!'
+          content='Jasa desain interior, pembuatan furnitur, dan kontraktor murah di Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Hubungi kami untuk wujudkan ruang impian Anda!'
         />
         <meta property='og:url' content='https://www.arvitstudio.com' />
         <meta property='og:type' content='website' />
@@ -82,7 +82,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name='twitter:description'
-          content='Jasa desain interior dan pembuatan furnitur custom di Jakarta, Bandung, Depok, Tangerang, dan Bekasi. Solusi berkualitas dengan harga terjangkau!'
+          content='Jasa desain interior dan pembuatan furnitur custom di Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Solusi berkualitas dengan harga terjangkau!'
         />
         <meta
           name='twitter:image'
