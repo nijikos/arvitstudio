@@ -29,7 +29,7 @@ export default function Promo({ test }: PromoProps) {
 
           <div className='bg-primary rounded-2xl flex flex-row'>
             <div className='flex flex-col gap-4 text-primary-dark xl:px-6 px-10 py-6 bg-white font-semibold shadow-lg rounded-2xl scale-105'>
-              <p className='text-lg lg:text-base'>Mulai:</p>
+              <p className='text-lg lg:text-base'>Mulai</p>
               <p className='text-lg lg:text-base'>Dari:</p>
             </div>
             <div className='flex flex-col gap-4 text-white px-8 py-6 lg:px-4'>
