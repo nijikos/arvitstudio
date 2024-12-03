@@ -40,8 +40,7 @@ export default function Hero({ test }: HeroProps) {
         </div>
         <div className='flex flex-row lg:flex-col gap-6 items-center lg:items-start lg:gap-2 text-accent'>
           <Link
-            target='_blank'
-            href={whatsappLink.link}
+            href={whatsappLink.anchor}
             className='button-xl lg:button-md button-contain-error'
           >
             Konsultasi Sekarang

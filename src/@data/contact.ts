@@ -5,5 +5,6 @@ export const whatsapp = {
 };
 
 export const whatsappLink = {
+  anchor: `#footer`,
   link: `https://wa.me/${whatsapp.number}/?text=${whatsapp.message}`,
 };

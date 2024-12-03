@@ -41,8 +41,7 @@ export default function Promo({ test }: PromoProps) {
           </div>
 
           <Link
-            target='_blank'
-            href={whatsappLink.link}
+            href={whatsappLink.anchor}
             className='button-xl w-80 lg:button-md button-contain-error'
           >
             Konsultasi Sekarang

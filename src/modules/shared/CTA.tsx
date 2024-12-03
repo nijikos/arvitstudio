@@ -42,8 +42,7 @@ export default function CTA({ test }: CTAProps) {
           />
         </p>
         <Link
-          target='_blank'
-          href={whatsappLink.link}
+          href={whatsappLink.anchor}
           className='button-xl lg:button-md button-contain-error'
         >
           Konsultasi Sekarang

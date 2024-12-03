@@ -29,7 +29,7 @@ export default function Footer({ test }: FooterProps) {
     },
   ];
   return (
-    <footer className='w-full '>
+    <footer id='footer' className='w-full '>
       <div className='w-full bg-primary px-32 lg:px-6 py-32 lg:py-20 grid grid-cols-3'>
         <div className='col-span-1 lg:col-span-3 lg:order-2'>
           <Link href='/furniture'>

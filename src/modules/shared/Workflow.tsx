@@ -46,8 +46,7 @@ export default function Workflow({ test }: WorkflowProps) {
           blurDataURL='/images/defaultimg.jpg'
         />
         <Link
-          target='_blank'
-          href={whatsappLink.link}
+          href={whatsappLink.anchor}
           className='button-xl w-80 button-contain-error mx-auto'
         >
           Konsultasi Sekarang
