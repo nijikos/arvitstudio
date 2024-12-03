@@ -108,14 +108,14 @@ export default function Footer({ test }: FooterProps) {
           </p>
           <p className='max-w-[620px] mb-4'>
             Dapatkan konsultasi gratis, desain sesuai kebutuhan, dan proses
-            mudah untuk mewujudkan rumah impianmu tanpa stres
+            mudah untuk mewujudkan interior impianmu tanpa stres
           </p>
           <Link
             target='_blank'
             href={whatsappLink.link}
-            className='button-xl lg:button-md button-contain-error w-fit'
+            className='button-md lg:button-md text-xl button-contain-error w-fit uppercase'
           >
-            Konsultasi Sekarang
+            AMBIL PROMO SEKARANG
           </Link>
           <div className='flex flex-col gap-6 mt-12 pb-8'>
             <div className='flex flex-row items-center gap-4'>
