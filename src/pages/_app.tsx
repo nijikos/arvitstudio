@@ -1,5 +1,6 @@
 // ---------- REACT/NEXT ----------
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 // ---------- FONT ----------
@@ -12,6 +13,7 @@ import "aos/dist/aos.css";
 // ---------- COMPONENTS ----------
 import ScrollToTop from "@/ui/ScrollToTop";
 import WhatsappButton from "@/ui/WhatsappButton";
+import FacebookPixel from "@/modules/pixel/FacebookPixel";
 // ---------- TYPES ----------
 // ---------- LIBRARIES ----------
 import AOS from "aos";
@@ -31,7 +33,24 @@ const bungee_inline = Bungee_Inline({
   variable: "--font-bungee",
 });
 
+const META_PIXEL_ID = "1392434154870946";
+
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  // Track page views on route change
+  useEffect(() => {
+    const handleRouteChange = () => {
+      if (typeof window.fbq !== "undefined") {
+        fbq("track", "PageView");
+      }
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -91,6 +110,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='canonical' href='https://www.arvitstudio.com' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+
+      <FacebookPixel META_PIXEL_ID={META_PIXEL_ID} />
+
       <Component {...pageProps} />
       <ScrollToTop />
       <WhatsappButton />
