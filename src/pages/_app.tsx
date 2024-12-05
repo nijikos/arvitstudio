@@ -38,18 +38,36 @@ const META_PIXEL_ID = "1392434154870946";
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  // Track page views on route change
   useEffect(() => {
+    // Declare ReactPixel variable outside the import scope
+    let ReactPixel: any;
+
+    // Dynamically import react-facebook-pixel
+    import("react-facebook-pixel")
+      .then((module) => {
+        ReactPixel = module.default;
+        ReactPixel.init(META_PIXEL_ID, {}, { debug: true }); // Initialize Meta Pixel
+        ReactPixel.pageView(); // Track initial page view
+      })
+      .catch((err: Error) => {
+        console.error("Failed to load react-facebook-pixel", err);
+      });
+
+    // Route change handler to track page views
     const handleRouteChange = () => {
-      if (typeof window.fbq !== "undefined") {
-        fbq("track", "PageView");
+      if (ReactPixel) {
+        ReactPixel.pageView();
       }
     };
+
+    // Attach event listener for route changes
     router.events.on("routeChangeComplete", handleRouteChange);
+
+    // Cleanup the event listener on unmount
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [router.events]); // Only re-run this effect when router.events change
 
   useEffect(() => {
     AOS.init({
@@ -110,8 +128,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='canonical' href='https://www.arvitstudio.com' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <FacebookPixel META_PIXEL_ID={META_PIXEL_ID} />
 
       <Component {...pageProps} />
       <ScrollToTop />
