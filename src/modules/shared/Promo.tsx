@@ -33,10 +33,16 @@ export default function Promo({ test }: PromoProps) {
               <p className='text-lg lg:text-base'>Dari:</p>
             </div>
             <div className='flex flex-col gap-4 text-white px-8 py-6 lg:px-4 italic'>
-              <p className='text-lg lg:text-base line-through decoration-red-500'>
-                Rp 35.000.000
+              <p className='text-lg lg:text-base '>
+                <span className='line-through decoration-red-500 decoration-2'>
+                  Rp 2.400.000/m
+                </span>
+                <span className='text-xs relative bottom-2.5 mb-3'>2</span>
               </p>
-              <p className='text-lg lg:text-base'>Rp 25.000.000</p>
+              <p className='text-lg lg:text-base'>
+                Rp 2.300.000/m
+                <span className='text-xs relative bottom-2.5 mb-3'>2</span>
+              </p>
             </div>
           </div>
 
