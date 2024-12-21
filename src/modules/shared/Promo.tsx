@@ -35,7 +35,7 @@ export default function Promo({ test }: PromoProps) {
             <div className='flex flex-col gap-4 text-white px-8 py-6 lg:px-4 italic'>
               <p className='text-lg lg:text-base '>
                 <span className='line-through decoration-red-500 decoration-2'>
-                  Rp 2.400.000/m
+                  Rp 2.500.000/m
                 </span>
                 <span className='text-xs relative bottom-2.5 mb-3'>2</span>
               </p>
