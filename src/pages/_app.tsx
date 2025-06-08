@@ -17,6 +17,7 @@ import FacebookPixel from "@/modules/pixel/FacebookPixel";
 // ---------- TYPES ----------
 // ---------- LIBRARIES ----------
 import AOS from "aos";
+import { Analytics } from "@vercel/analytics/next";
 // ---------- DATA ----------
 // ---------- HELPERS ----------
 
@@ -130,6 +131,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
+      <Analytics />
       <ScrollToTop />
       <WhatsappButton />
     </main>
